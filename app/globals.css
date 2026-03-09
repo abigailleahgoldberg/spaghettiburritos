@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0A0008;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: #EC4899;
+  color: #0A0008;
+}
+
+.post-card {
+  background: #140012;
+  border: 1px solid #2a0025;
+  border-radius: 4px;
+  padding: 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.post-card:hover {
+  border-color: #EC4899;
+}
+
+.more-card {
+  background: #140012;
+  border: 1px solid #2a0025;
+  border-radius: 4px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.more-card:hover {
+  border-color: #EC4899;
+}
