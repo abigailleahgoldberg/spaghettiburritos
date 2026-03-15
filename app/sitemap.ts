@@ -54,6 +54,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.7,
     },
+    {
+      url: `${base}/stories/example-ai-drama-story`,
+      lastModified: new Date(),
+      changeFrequency: "never",
+      priority: 0.6,
+    },
     ...blogPosts,
   ];
 }

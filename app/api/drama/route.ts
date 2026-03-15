@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   try {
-    const { drama, characterName } = await req.json();
+    const { drama, characterName, category } = await req.json();
 
     if (!drama || drama.length < 20) {
       return NextResponse.json(
@@ -27,8 +27,9 @@ export async function POST(req: Request) {
     }
 
     const mainChar = characterName?.trim() || 'Alex';
+    const dramaCategory = category?.trim() || 'Random';
 
-    const prompt = `You are a comedic fiction writer for a tabloid website called Spaghetti Burritos. Someone anonymously submitted the following drama. Turn it into a SHORT, hilarious fictional story (400-600 words). Make it absurd, over-the-top, and genuinely funny. Change all details enough that it is clearly fiction. The main character should be named "${mainChar}".
+    const prompt = `You are a comedic fiction writer for a tabloid website called Spaghetti Burritos. Someone anonymously submitted the following ${dramaCategory} drama. Turn it into a SHORT, hilarious fictional story (400-600 words). Make it absurd, over-the-top, and genuinely funny. Change all details enough that it is clearly fiction. The main character should be named "${mainChar}". The story should lean into the "${dramaCategory}" category setting.
 
 IMPORTANT: This MUST be clearly fictional. Exaggerate everything. Add ridiculous details. Make it obviously a comedy piece, not a report of real events.
 
