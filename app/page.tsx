@@ -369,6 +369,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* GOT DRAMA CTA */}
+      <section style={{
+        background: "#141414",
+        borderTop: "3px solid rgba(255,51,51,0.3)",
+        borderBottom: "3px solid rgba(255,51,51,0.3)",
+        padding: "80px 24px",
+        textAlign: "center",
+      }}>
+        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+          <div style={{
+            display: "inline-block",
+            background: "#FF3333",
+            color: "#F0F0F0",
+            fontSize: "0.7rem",
+            fontWeight: 900,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            padding: "4px 14px",
+            marginBottom: "20px",
+          }}>
+            Anonymous. AI-Powered. Completely Fictional.
+          </div>
+          <h2 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "clamp(3rem, 8vw, 6rem)",
+            lineHeight: 0.95,
+            margin: "0 0 20px",
+            color: "#F0F0F0",
+            letterSpacing: "0.02em",
+          }}>
+            GOT <span style={{ color: "#FFD700" }}>DRAMA?</span>
+          </h2>
+          <p style={{
+            color: "#888888",
+            fontSize: "1.1rem",
+            lineHeight: 1.7,
+            marginBottom: "36px",
+          }}>
+            Submit your mess anonymously. Our AI turns it into fiction. It&apos;s art.
+          </p>
+          <Link href="/submit-drama" style={{
+            background: "#FFD700",
+            color: "#0A0A0A",
+            textDecoration: "none",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.4rem",
+            letterSpacing: "0.1em",
+            padding: "18px 56px",
+            display: "inline-block",
+            transition: "background 0.2s",
+          }}>
+            SUBMIT YOUR DRAMA
+          </Link>
+        </div>
+      </section>
+
       {/* NEWSLETTER */}
       <section id="newsletter" style={{
         background: "#141414",

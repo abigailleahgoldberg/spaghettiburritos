@@ -9,6 +9,7 @@ Spaghetti Burritos is a pop culture and internet commentary site. We cover strea
 ## Content
 
 - Blog posts covering internet culture, sports, food, pop culture, and miscellaneous degenerate opinions
+- Submit Your Drama: anonymous story engine at /submit-drama — users submit real drama, AI transforms it into clearly-labeled comedic fiction using GPT-4o-mini
 - Newsletter delivering takes directly to inboxes
 - Contact form for tips and correspondence
 

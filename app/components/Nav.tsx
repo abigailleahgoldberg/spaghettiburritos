@@ -73,6 +73,21 @@ export default function Nav() {
           >
             ABOUT
           </Link>
+          <Link href="/submit-drama" style={{
+            background: "#FFD700",
+            color: "#0A0A0A",
+            textDecoration: "none",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.1rem",
+            letterSpacing: "0.1em",
+            padding: "8px 20px",
+            transition: "background 0.2s",
+          }}
+          onMouseEnter={e => (e.currentTarget.style.background = "#FFC200")}
+          onMouseLeave={e => (e.currentTarget.style.background = "#FFD700")}
+          >
+            SUBMIT DRAMA
+          </Link>
         </div>
 
         {/* Hamburger */}
@@ -115,6 +130,19 @@ export default function Nav() {
           letterSpacing: "0.1em",
         }} onClick={() => setOpen(false)}>
           ABOUT
+        </Link>
+        <Link href="/submit-drama" style={{
+          background: "#FFD700",
+          color: "#0A0A0A",
+          textDecoration: "none",
+          fontFamily: "var(--font-bebas), Arial, sans-serif",
+          fontSize: "1.5rem",
+          letterSpacing: "0.1em",
+          padding: "8px 20px",
+          display: "inline-block",
+          textAlign: "center",
+        }} onClick={() => setOpen(false)}>
+          SUBMIT DRAMA
         </Link>
       </div>
     </>

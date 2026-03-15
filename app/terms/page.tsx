@@ -64,10 +64,25 @@ export default function TermsPage() {
             content: 'We may update these terms at any time. Continued use of the site constitutes acceptance of updated terms.',
           },
           {
-            title: '7. Contact',
+            title: '7. User-Submitted Content & AI-Generated Stories',
+            content: null,
+            isList: true,
+            items: [
+              'All submissions to the "Submit Your Drama" feature are anonymous and voluntary.',
+              'Spaghetti Burritos uses artificial intelligence to transform submissions into fictional stories.',
+              'ALL generated stories are works of FICTION. They are not factual accounts of real events.',
+              'Any resemblance to actual persons, living or dead, or actual events is purely coincidental.',
+              'By submitting content, you confirm that you are not submitting content intended to defame, harass, or threaten any individual.',
+              'Spaghetti Burritos reserves the right to refuse to generate or to remove any story at any time.',
+              'We are not responsible for how users interpret AI-generated fictional content.',
+              'Submitters agree to indemnify Spaghetti Burritos against any claims arising from their submissions.',
+            ],
+          },
+          {
+            title: '8. Contact',
             content: null,
           },
-        ].map(({ title, content }) => (
+        ].map(({ title, content, isList, items }: { title: string; content: string | null; isList?: boolean; items?: string[] }) => (
           <section key={title} style={{ marginBottom: '32px' }}>
             <h2 style={{
               fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
@@ -82,6 +97,12 @@ export default function TermsPage() {
             </h2>
             {content ? (
               <p style={{ lineHeight: 1.8, color: '#888888', margin: 0 }}>{content}</p>
+            ) : isList && items ? (
+              <ul style={{ color: '#888888', lineHeight: 1.8, margin: 0, paddingLeft: '20px' }}>
+                {items.map((item: string, idx: number) => (
+                  <li key={idx} style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
             ) : (
               <p style={{ lineHeight: 1.8, color: '#888888', margin: 0 }}>
                 Questions about these terms:{' '}
