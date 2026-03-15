@@ -1,0 +1,15 @@
+/* TEAM */
+Site: Spaghetti Burritos
+URL: https://spaghettiburritos.com
+Contact: thevoiceofcash@gmail.com
+
+/* THANKS */
+The drunken 2AM decisions that inspired this content.
+The group chat that went unread for three days.
+Every bad take that turned into a great story.
+The gas station roller dog, still spinning.
+
+/* SITE */
+Language: English
+Doctype: HTML5
+IDE: Whatever gets the job done

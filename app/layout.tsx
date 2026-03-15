@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
+import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Spaghetti Burritos | Pop Culture and Internet Nonsense",
-  description: "Streamer drama, viral moments, celebrity beef, sports betting chaos, and hot takes nobody asked for. Unhinged content for a broken internet.",
+  title: "Spaghetti Burritos | The Internet's Worst Best Website",
+  description: "Hot takes nobody asked for. Degenerate opinions delivered daily. Streamer drama, pop culture chaos, sports rants, and food crimes. No filter.",
   metadataBase: new URL("https://spaghettiburritos.com"),
   openGraph: {
-    title: "Spaghetti Burritos | Pop Culture and Internet Nonsense",
-    description: "Streamer drama, viral moments, celebrity beef, sports betting chaos, and hot takes nobody asked for.",
+    title: "Spaghetti Burritos | The Internet's Worst Best Website",
+    description: "Hot takes nobody asked for. Degenerate opinions delivered daily.",
     url: "https://spaghettiburritos.com",
     siteName: "Spaghetti Burritos",
     type: "website",
@@ -15,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Spaghetti Burritos",
-    description: "Unhinged content for a broken internet.",
+    description: "The internet's worst best website. No filter.",
   },
   robots: {
     index: true,
@@ -29,9 +45,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body style={{ margin: 0, padding: 0 }}>
-        {children}
+    <html lang="en" className={`${bebasNeue.variable} ${inter.variable}`}>
+      <body style={{
+        margin: 0,
+        padding: 0,
+        background: "#0A0A0A",
+        fontFamily: "var(--font-inter), Arial, sans-serif",
+        color: "#F0F0F0",
+      }}>
+        <Nav />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

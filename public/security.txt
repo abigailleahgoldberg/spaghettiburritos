@@ -1,0 +1,4 @@
+Contact: mailto:thevoiceofcash@gmail.com
+Preferred-Languages: en
+Canonical: https://spaghettiburritos.com/security.txt
+Policy: https://spaghettiburritos.com/privacy

@@ -1,0 +1,76 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer style={{
+      borderTop: "3px solid rgba(255,215,0,0.15)",
+      background: "#0A0A0A",
+      padding: "60px 24px 40px",
+    }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+        {/* Logo + tagline */}
+        <div style={{ marginBottom: "40px" }}>
+          <div style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "2.5rem",
+            letterSpacing: "0.05em",
+            marginBottom: "8px",
+          }}>
+            <span style={{ color: "#FFD700" }}>SPAGHETTI</span>
+            {" "}
+            <span style={{ color: "#FF3333" }}>BURRITOS</span>
+          </div>
+          <p style={{
+            color: "#888888",
+            fontSize: "0.95rem",
+            margin: 0,
+            fontStyle: "italic",
+          }}>
+            Nobody asked for this. You clicked anyway. We respect it.
+          </p>
+        </div>
+
+        {/* Links row */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "16px 40px",
+          marginBottom: "40px",
+        }}>
+          <Link href="/blog" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            BLOG
+          </Link>
+          <Link href="/about" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            ABOUT
+          </Link>
+          <Link href="/privacy" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            PRIVACY
+          </Link>
+          <Link href="/terms" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            TERMS
+          </Link>
+          <a href="mailto:tips@spaghettiburritos.com" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            SEND TIPS
+          </a>
+        </div>
+
+        {/* Bottom */}
+        <div style={{
+          borderTop: "1px solid rgba(255,215,0,0.1)",
+          paddingTop: "24px",
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          gap: "12px",
+        }}>
+          <p style={{ color: "#888888", fontSize: "0.75rem", margin: 0 }}>
+            &copy; {new Date().getFullYear()} Spaghetti Burritos. All chaos reserved.
+          </p>
+          <p style={{ color: "#888888", fontSize: "0.75rem", margin: 0 }}>
+            Powered by The Voice of Cash Team
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

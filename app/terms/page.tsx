@@ -1,114 +1,102 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Spaghetti Burritos',
-  description: 'Terms of Service for Spaghetti Burritos. Please read these terms carefully before using our website.',
+  description: 'Terms of Service for Spaghetti Burritos.',
 };
 
 export default function TermsPage() {
   return (
-    <main style={{ background: '#0A0008', color: '#F5F0EB', minHeight: '100vh', padding: '2rem 1rem' }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 700, color: '#EC4899', marginBottom: '0.5rem' }}>
-          Terms of Service
-        </h1>
-        <p style={{ color: '#F5F0EB', opacity: 0.6, marginBottom: '2rem', fontSize: '0.9rem' }}>
-          Last updated: March 2026
-        </p>
+    <div style={{ background: '#0A0A0A', minHeight: '100vh' }}>
+      <section style={{
+        background: '#141414',
+        borderBottom: '3px solid rgba(255,215,0,0.15)',
+        padding: '60px 24px 40px',
+      }}>
+        <div style={{ maxWidth: '740px', margin: '0 auto' }}>
+          <h1 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: 'clamp(3rem, 8vw, 5rem)',
+            lineHeight: 0.95,
+            margin: '0',
+            color: '#F0F0F0',
+          }}>
+            TERMS OF<br /><span style={{ color: '#FF3333' }}>SERVICE</span>
+          </h1>
+          <p style={{ color: '#888888', fontSize: '0.85rem', margin: '12px 0 0' }}>
+            Last updated: March 2026
+          </p>
+        </div>
+      </section>
 
-        <div style={{ background: '#140012', border: '1px solid #2a0025', borderRadius: '8px', padding: '2rem', marginBottom: '2rem' }}>
-          <p style={{ lineHeight: 1.8 }}>
-            Please read these Terms of Service carefully before using https://spaghettiburritos.com operated by The Voice of Cash (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By accessing or using our service, you agree to be bound by these terms.
+      <div style={{ maxWidth: '740px', margin: '0 auto', padding: '60px 24px 80px', color: '#F0F0F0' }}>
+        <div style={{ background: '#141414', border: '1px solid rgba(255,215,0,0.15)', padding: '24px', marginBottom: '32px' }}>
+          <p style={{ lineHeight: 1.8, margin: 0, color: '#888888' }}>
+            By accessing https://spaghettiburritos.com, you agree to these Terms of Service.
+            Operated by The Voice of Cash Team.
           </p>
         </div>
 
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            1. Acceptance of Terms
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            By accessing and using https://spaghettiburritos.com, you accept and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our website.
-          </p>
-        </section>
+        {[
+          {
+            title: '1. Use of the Site',
+            content: 'Use the site for lawful purposes only. Do not attempt unauthorized access, transmit harmful content, or use automated tools to harvest data without permission.',
+          },
+          {
+            title: '2. Intellectual Property',
+            content: 'All content on this site is owned by Spaghetti Burritos / The Voice of Cash Team. You may not reproduce or distribute content without written permission.',
+          },
+          {
+            title: '3. Disclaimer',
+            content: 'Content on this site is opinion and commentary, not professional advice of any kind. We make no warranties about accuracy or completeness.',
+          },
+          {
+            title: '4. Limitation of Liability',
+            content: 'To the maximum extent permitted by law, we are not liable for any damages arising from your use of this site.',
+          },
+          {
+            title: '5. Governing Law',
+            content: 'These terms are governed by the laws of the State of Nevada.',
+          },
+          {
+            title: '6. Changes',
+            content: 'We may update these terms at any time. Continued use of the site constitutes acceptance of updated terms.',
+          },
+          {
+            title: '7. Contact',
+            content: null,
+          },
+        ].map(({ title, content }) => (
+          <section key={title} style={{ marginBottom: '32px' }}>
+            <h2 style={{
+              fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+              fontSize: '1.5rem',
+              letterSpacing: '0.05em',
+              color: '#FF3333',
+              margin: '0 0 12px',
+              borderBottom: '1px solid rgba(255,215,0,0.15)',
+              paddingBottom: '8px',
+            }}>
+              {title}
+            </h2>
+            {content ? (
+              <p style={{ lineHeight: 1.8, color: '#888888', margin: 0 }}>{content}</p>
+            ) : (
+              <p style={{ lineHeight: 1.8, color: '#888888', margin: 0 }}>
+                Questions about these terms:{' '}
+                <a href="mailto:thevoiceofcash@gmail.com" style={{ color: '#FFD700' }}>thevoiceofcash@gmail.com</a>
+              </p>
+            )}
+          </section>
+        ))}
 
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            2. Description of Service
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            Spaghetti Burritos provides online content, information, and services through our website. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time without notice.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            3. Intellectual Property
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            All content on https://spaghettiburritos.com, including but not limited to text, graphics, logos, images, audio clips, and software, is the property of The Voice of Cash / Spaghetti Burritos and is protected by United States and international copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            4. User Responsibilities
-          </h2>
-          <p style={{ marginBottom: '1rem', lineHeight: 1.8 }}>By using our service, you agree to:</p>
-          <ul style={{ paddingLeft: '1.5rem', lineHeight: 1.8 }}>
-            <li style={{ marginBottom: '0.5rem' }}>Use the website only for lawful purposes</li>
-            <li style={{ marginBottom: '0.5rem' }}>Not attempt to gain unauthorized access to any part of the website</li>
-            <li style={{ marginBottom: '0.5rem' }}>Not transmit any harmful, offensive, or disruptive content</li>
-            <li style={{ marginBottom: '0.5rem' }}>Not use automated tools to scrape or harvest data without permission</li>
-            <li style={{ marginBottom: '0.5rem' }}>Provide accurate information when using our contact forms or services</li>
-          </ul>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            5. Limitation of Liability
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            To the fullest extent permitted by law, The Voice of Cash and Spaghetti Burritos shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, this website or its content. Our total liability shall not exceed the amount paid by you, if any, for accessing our services.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            6. Indemnification
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            You agree to indemnify, defend, and hold harmless The Voice of Cash, Spaghetti Burritos, and their respective officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&apos; fees) arising out of your use of the website or violation of these Terms of Service.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            7. Governing Law
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            These Terms of Service shall be governed by and construed in accordance with the laws of the State of Nevada, without regard to its conflict of law provisions. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts located in Nevada.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            8. Changes to Terms
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            We reserve the right to modify these Terms of Service at any time. Changes will be posted on this page with an updated &ldquo;Last updated&rdquo; date. Your continued use of the website after changes are posted constitutes your acceptance of the modified terms.
-          </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#EC4899', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #2a0025' }}>
-            9. Contact Us
-          </h2>
-          <p style={{ lineHeight: 1.8 }}>
-            For questions about these Terms of Service, contact us at:{' '}
-            <a href="mailto:thevoiceofcash@gmail.com" style={{ color: '#EC4899' }}>thevoiceofcash@gmail.com</a>
-          </p>
-        </section>
+        <div style={{ borderTop: '1px solid rgba(255,215,0,0.15)', paddingTop: '24px' }}>
+          <Link href="/" style={{ color: '#888888', textDecoration: 'none', fontSize: '0.85rem' }}>
+            &larr; Back Home
+          </Link>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

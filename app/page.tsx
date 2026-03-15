@@ -1,304 +1,464 @@
+"use client";
+
 import Link from "next/link";
-import { getRecentPosts } from "./blog/data";
+import { useState } from "react";
+import { posts } from "./blog/data";
 
 const tickerItems = [
   "BREAKING: local man has opinions about strangers on the internet",
   "DEVELOPING: streamer posts vague tweet, nobody knows what it means, everyone has theories",
-  "ALERT: algorithm shows you the same type of video for the 14th time today",
-  "SOURCES SAY: celebrity apology video incoming, publicist already booked",
-  "JUST IN: sports betting parlay hits at 2am, man wakes up everyone in the house",
-  "REPORT: platform changes monetization policy, creators furious, nothing changes",
+  "ALERT: algorithm shows you the same video for the 14th time today",
+  "SOURCES SAY: gas station hot dog slaps harder than your favorite restaurant",
+  "JUST IN: fantasy football league officially ruined a friendship",
+  "REPORT: 2AM fast food run scientifically proven to be the best meal of the day",
   "BREAKING: hot take goes viral, hot take about the hot take goes viral an hour later",
+  "EXCLUSIVE: group chat still has unread messages from three weeks ago",
 ];
 
+const categoryColors: Record<string, string> = {
+  "Streamer Drama": "#FF3333",
+  "Internet Chaos": "#FFD700",
+  "Sports": "#FF3333",
+  "Pop Culture": "#FFD700",
+  "Hot Takes": "#FF3333",
+  "FOOD": "#FFD700",
+  "SPORTS": "#FF3333",
+  "CULTURE": "#FFD700",
+  "DEGENERATE": "#FF3333",
+};
+
+function getCatColor(cat: string): string {
+  return categoryColors[cat] || "#FFD700";
+}
+
 export default function Home() {
-  const recentPosts = getRecentPosts(3);
+  const [email, setEmail] = useState("");
+  const [subStatus, setSubStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+
+  const latestPosts = posts.slice(0, 4);
+  const trendingPosts = posts.slice(0, 4);
+
+  async function handleSubscribe(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email) return;
+    setSubStatus("loading");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: "Newsletter Subscriber", email, message: "Newsletter signup" }),
+      });
+      if (res.ok) {
+        setSubStatus("done");
+        setEmail("");
+      } else {
+        setSubStatus("error");
+      }
+    } catch {
+      setSubStatus("error");
+    }
+  }
 
   return (
-    <div style={{ background: "#0A0008", minHeight: "100vh", fontFamily: "'Arial Black', Arial, sans-serif" }}>
-      {/* Nav */}
-      <nav style={{
-        background: "#0A0008",
-        borderBottom: "2px solid #EC4899",
-        padding: "0 24px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        height: "64px",
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-      }}>
-        <Link href="/" style={{
-          textDecoration: "none",
-          fontSize: "1.4rem",
-          fontWeight: 900,
-          letterSpacing: "-0.02em",
-          color: "#FAFAF8",
-          textTransform: "uppercase",
-        }}>
-          <span style={{ color: "#EC4899" }}>SPAGHETTI</span>
-          <span style={{ color: "#FBBF24" }}> BURRITOS</span>
-        </Link>
-        <div style={{ display: "flex", gap: "24px", alignItems: "center" }}>
-          <Link href="/blog" style={{
-            color: "#FAFAF8",
-            textDecoration: "none",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-          }}>
-            Blog
-          </Link>
-          <a href="mailto:tips@spaghettiburritos.com" style={{
-            background: "#EC4899",
-            color: "#FAFAF8",
-            textDecoration: "none",
-            fontSize: "0.8rem",
-            fontWeight: 700,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            padding: "8px 16px",
-            borderRadius: "2px",
-          }}>
-            Send Hot Takes
-          </a>
-        </div>
-      </nav>
+    <div style={{ background: "#0A0A0A", minHeight: "100vh" }}>
 
-      {/* Hero */}
-      <section style={{
-        padding: "80px 24px 60px",
-        maxWidth: "900px",
-        margin: "0 auto",
-        textAlign: "center",
-      }}>
-        <div style={{
-          display: "inline-block",
-          background: "#EC4899",
-          color: "#0A0008",
-          fontSize: "0.7rem",
-          fontWeight: 900,
-          letterSpacing: "0.15em",
-          textTransform: "uppercase",
-          padding: "4px 12px",
-          marginBottom: "24px",
-        }}>
-          Est. When The Internet Broke
-        </div>
-        <h1 style={{
-          fontSize: "clamp(2.5rem, 8vw, 5rem)",
-          fontWeight: 900,
-          lineHeight: 1.05,
-          letterSpacing: "-0.03em",
-          margin: "0 0 24px",
-          background: "linear-gradient(135deg, #EC4899 0%, #FBBF24 60%, #14B8A6 100%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
-        }}>
-          The Internet Is Cooked.<br />We're Just Documenting It.
-        </h1>
-        <p style={{
-          color: "#FAFAF8",
-          fontSize: "1.2rem",
-          maxWidth: "600px",
-          margin: "0 auto 40px",
-          opacity: 0.8,
-          fontWeight: 400,
-          fontFamily: "Arial, sans-serif",
-          lineHeight: 1.6,
-        }}>
-          Streamer drama. Viral moments. Celebrity beef. Sports betting chaos. Hot takes nobody asked for. You found it.
-        </p>
-        <Link href="/blog" style={{
-          background: "#EC4899",
-          color: "#FAFAF8",
-          textDecoration: "none",
-          fontSize: "1rem",
-          fontWeight: 900,
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-          padding: "16px 40px",
-          display: "inline-block",
-          borderRadius: "2px",
-        }}>
-          Read The Chaos
-        </Link>
-      </section>
-
-      {/* Ticker */}
+      {/* NEWS TICKER */}
       <div style={{
-        background: "#EC4899",
+        background: "#FF3333",
         padding: "10px 0",
         overflow: "hidden",
-        borderTop: "2px solid #FBBF24",
-        borderBottom: "2px solid #FBBF24",
+        borderBottom: "2px solid rgba(255,215,0,0.3)",
       }}>
         <div style={{
           display: "flex",
           gap: "80px",
-          animation: "ticker 40s linear infinite",
+          animation: "ticker 50s linear infinite",
           whiteSpace: "nowrap",
           width: "max-content",
         }}>
           {[...tickerItems, ...tickerItems].map((item, i) => (
             <span key={i} style={{
-              color: "#0A0008",
-              fontSize: "0.8rem",
-              fontWeight: 900,
-              letterSpacing: "0.05em",
+              color: "#F0F0F0",
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              letterSpacing: "0.08em",
               textTransform: "uppercase",
+              fontFamily: "var(--font-inter), Arial, sans-serif",
             }}>
-              {"\u2605"} {item}
+              &#9733; {item}
             </span>
           ))}
         </div>
-        <style>{`
-          @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-        `}</style>
       </div>
 
-      {/* Latest Posts */}
-      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "64px 24px" }}>
-        <div style={{ display: "flex", alignItems: "baseline", gap: "16px", marginBottom: "40px" }}>
-          <h2 style={{
-            color: "#FAFAF8",
-            fontSize: "1.8rem",
-            fontWeight: 900,
-            textTransform: "uppercase",
-            letterSpacing: "-0.01em",
-            margin: 0,
+      {/* HERO */}
+      <section style={{
+        padding: "80px 24px 60px",
+        maxWidth: "1100px",
+        margin: "0 auto",
+        textAlign: "center",
+      }}>
+        <div style={{
+          display: "inline-block",
+          background: "#FFD700",
+          color: "#0A0A0A",
+          fontSize: "0.7rem",
+          fontWeight: 900,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          padding: "4px 14px",
+          marginBottom: "24px",
+        }}>
+          Est. When The Internet Peaked Then Immediately Went Downhill
+        </div>
+
+        <h1 style={{
+          fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+          fontSize: "clamp(4rem, 12vw, 9rem)",
+          lineHeight: 0.95,
+          letterSpacing: "0.02em",
+          margin: "0 0 24px",
+          color: "#F0F0F0",
+        }}>
+          THE INTERNET&apos;S<br />
+          <span style={{ color: "#FFD700" }}>WORST</span>{" "}
+          <span style={{ color: "#FF3333" }}>BEST</span><br />
+          WEBSITE
+        </h1>
+
+        <p style={{
+          color: "#888888",
+          fontSize: "1.1rem",
+          maxWidth: "600px",
+          margin: "0 auto 40px",
+          lineHeight: 1.7,
+        }}>
+          Hot takes. Degenerate opinions. Stuff your mom would not forward.
+          Streamer drama, sports rants, food crimes, and cultural crimes.
+          All of it. No filter. No apologies.
+        </p>
+
+        <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+          <Link href="/blog" style={{
+            background: "#FFD700",
+            color: "#0A0A0A",
+            textDecoration: "none",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.2rem",
+            letterSpacing: "0.1em",
+            padding: "16px 40px",
+            display: "inline-block",
+            transition: "background 0.2s",
           }}>
-            Latest
+            READ THE CHAOS
+          </Link>
+          <a href="#newsletter" style={{
+            border: "2px solid #FFD700",
+            color: "#FFD700",
+            textDecoration: "none",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.2rem",
+            letterSpacing: "0.1em",
+            padding: "14px 40px",
+            display: "inline-block",
+          }}>
+            GET THE TAKES
+          </a>
+        </div>
+      </section>
+
+      {/* LATEST HOT TAKES */}
+      <section id="hot-takes" style={{ maxWidth: "1100px", margin: "0 auto", padding: "20px 24px 64px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "40px" }}>
+          <div style={{
+            background: "#FF3333",
+            color: "#F0F0F0",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1rem",
+            letterSpacing: "0.15em",
+            padding: "4px 14px",
+          }}>
+            LATEST
+          </div>
+          <h2 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "2rem",
+            letterSpacing: "0.05em",
+            margin: 0,
+            color: "#F0F0F0",
+          }}>
+            HOT TAKES
           </h2>
-          <div style={{ flex: 1, height: "2px", background: "linear-gradient(90deg, #EC4899, transparent)" }} />
+          <div style={{ flex: 1, height: "2px", background: "linear-gradient(90deg, rgba(255,215,0,0.4), transparent)" }} />
         </div>
 
         <div style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-          gap: "24px",
+          gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+          gap: "20px",
         }}>
-          {recentPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
-              <article className="post-card" style={{ gap: "12px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          {latestPosts.map((post) => {
+            const accentColor = getCatColor(post.category);
+            return (
+              <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                <article className="post-card">
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{
+                      background: accentColor,
+                      color: "#0A0A0A",
+                      fontSize: "0.62rem",
+                      fontWeight: 900,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      padding: "3px 8px",
+                    }}>
+                      {post.category}
+                    </span>
+                    <span style={{ color: "#888888", fontSize: "0.72rem" }}>
+                      {post.readTime}
+                    </span>
+                  </div>
+
+                  <h3 style={{
+                    fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: 1.1,
+                    margin: 0,
+                    letterSpacing: "0.02em",
+                    color: "#F0F0F0",
+                  }}>
+                    {post.title}
+                  </h3>
+
+                  <p style={{
+                    color: "#888888",
+                    fontSize: "0.88rem",
+                    lineHeight: 1.6,
+                    margin: 0,
+                    flex: 1,
+                  }}>
+                    {post.excerpt}
+                  </p>
+
                   <span style={{
-                    background: "#EC4899",
-                    color: "#0A0008",
-                    fontSize: "0.65rem",
-                    fontWeight: 900,
+                    color: accentColor,
+                    fontSize: "0.78rem",
+                    fontWeight: 700,
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
-                    padding: "3px 8px",
-                    borderRadius: "2px",
                   }}>
-                    {post.category}
+                    Read it &rarr;
                   </span>
-                  <span style={{ color: "#FAFAF8", opacity: 0.4, fontSize: "0.75rem", fontFamily: "Arial, sans-serif" }}>
-                    {post.readTime}
-                  </span>
-                </div>
-                <h3 style={{
-                  color: "#FAFAF8",
-                  fontSize: "1.15rem",
-                  fontWeight: 900,
-                  lineHeight: 1.3,
-                  margin: 0,
-                  letterSpacing: "-0.01em",
-                }}>
-                  {post.title}
-                </h3>
-                <p style={{
-                  color: "#FAFAF8",
-                  opacity: 0.6,
-                  fontSize: "0.9rem",
-                  lineHeight: 1.6,
-                  margin: 0,
-                  fontFamily: "Arial, sans-serif",
-                  flex: 1,
-                }}>
-                  {post.excerpt}
-                </p>
-                <span style={{
-                  color: "#EC4899",
-                  fontSize: "0.8rem",
-                  fontWeight: 900,
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                }}>
-                  Read more &rarr;
-                </span>
-              </article>
-            </Link>
-          ))}
+                </article>
+              </Link>
+            );
+          })}
         </div>
 
-        <div style={{ textAlign: "center", marginTop: "48px" }}>
+        <div style={{ textAlign: "center", marginTop: "40px" }}>
           <Link href="/blog" style={{
-            border: "2px solid #EC4899",
-            color: "#EC4899",
+            border: "2px solid rgba(255,215,0,0.4)",
+            color: "#FFD700",
             textDecoration: "none",
-            fontSize: "0.9rem",
-            fontWeight: 900,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            padding: "14px 36px",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.1rem",
+            letterSpacing: "0.12em",
+            padding: "12px 36px",
             display: "inline-block",
-            borderRadius: "2px",
+            transition: "border-color 0.2s",
           }}>
-            All Posts
+            ALL POSTS
           </Link>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{
-        borderTop: "1px solid #2a0025",
-        padding: "40px 24px",
+      {/* DIVIDER */}
+      <div style={{
+        maxWidth: "1100px",
+        margin: "0 auto 0",
+        padding: "0 24px",
+        height: "2px",
+        background: "linear-gradient(90deg, transparent, rgba(255,215,0,0.3), transparent)",
+      }} />
+
+      {/* TRENDING */}
+      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "64px 24px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "40px" }}>
+          <div style={{
+            background: "#FFD700",
+            color: "#0A0A0A",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1rem",
+            letterSpacing: "0.15em",
+            padding: "4px 14px",
+          }}>
+            TRENDING
+          </div>
+          <h2 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "2rem",
+            letterSpacing: "0.05em",
+            margin: 0,
+            color: "#F0F0F0",
+          }}>
+            RIGHT NOW
+          </h2>
+          <div style={{ flex: 1, height: "2px", background: "linear-gradient(90deg, rgba(255,215,0,0.4), transparent)" }} />
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          {trendingPosts.map((post, i) => {
+            const accentColor = getCatColor(post.category);
+            return (
+              <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                <div style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "24px",
+                  padding: "24px 0",
+                  borderBottom: "1px solid rgba(255,215,0,0.1)",
+                  transition: "background 0.2s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.background = "#141414")}
+                onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
+                >
+                  <span style={{
+                    fontFamily: "var(--font-bebas), Arial, sans-serif",
+                    fontSize: "3.5rem",
+                    lineHeight: 1,
+                    color: "rgba(255,215,0,0.2)",
+                    minWidth: "60px",
+                    textAlign: "right",
+                  }}>
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ display: "flex", gap: "8px", alignItems: "center", marginBottom: "8px" }}>
+                      <span style={{
+                        background: accentColor,
+                        color: "#0A0A0A",
+                        fontSize: "0.6rem",
+                        fontWeight: 900,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        padding: "2px 7px",
+                      }}>
+                        {post.category}
+                      </span>
+                      <span style={{ color: "#888888", fontSize: "0.72rem" }}>
+                        {post.readTime}
+                      </span>
+                    </div>
+                    <h3 style={{
+                      fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+                      fontSize: "1.6rem",
+                      lineHeight: 1.1,
+                      margin: "0 0 8px",
+                      color: "#F0F0F0",
+                    }}>
+                      {post.title}
+                    </h3>
+                    <p style={{ color: "#888888", fontSize: "0.88rem", lineHeight: 1.5, margin: 0 }}>
+                      {post.excerpt}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* NEWSLETTER */}
+      <section id="newsletter" style={{
+        background: "#141414",
+        borderTop: "3px solid rgba(255,215,0,0.15)",
+        borderBottom: "3px solid rgba(255,215,0,0.15)",
+        padding: "80px 24px",
         textAlign: "center",
       }}>
-        <div style={{
-          color: "#FAFAF8",
-          fontSize: "1rem",
-          fontWeight: 900,
-          letterSpacing: "-0.01em",
-          marginBottom: "12px",
-        }}>
-          <span style={{ color: "#EC4899" }}>SPAGHETTI</span>
-          <span style={{ color: "#FBBF24" }}> BURRITOS</span>
-        </div>
-        <p style={{
-          color: "#FAFAF8",
-          opacity: 0.4,
-          fontSize: "0.8rem",
-          fontFamily: "Arial, sans-serif",
-          margin: "0 0 20px",
-        }}>
-          Unhinged content for a broken internet.
-        </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
-          {["Twitter", "Instagram", "TikTok"].map((s) => (
-            <span key={s} style={{
-              color: "#FAFAF8",
-              opacity: 0.3,
-              fontSize: "0.75rem",
-              fontFamily: "Arial, sans-serif",
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+          <div style={{
+            display: "inline-block",
+            background: "#FF3333",
+            color: "#F0F0F0",
+            fontSize: "0.7rem",
+            fontWeight: 900,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            padding: "4px 14px",
+            marginBottom: "20px",
+          }}>
+            FREE. UNSUBSCRIBE ANYTIME. PROBABLY WON&apos;T THO.
+          </div>
+
+          <h2 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "clamp(2.5rem, 6vw, 4rem)",
+            lineHeight: 1,
+            margin: "0 0 16px",
+            color: "#F0F0F0",
+          }}>
+            GET THE TAKES<br />
+            <span style={{ color: "#FFD700" }}>NOBODY ASKED FOR</span>
+          </h2>
+
+          <p style={{ color: "#888888", fontSize: "1rem", lineHeight: 1.7, marginBottom: "32px" }}>
+            Delivered to your inbox. Hot takes, degenerate opinions, and content
+            your therapist would call a red flag. Subscribe or don&apos;t. We&apos;ll be fine.
+          </p>
+
+          {subStatus === "done" ? (
+            <div style={{
+              background: "#0A0A0A",
+              border: "2px solid #FFD700",
+              padding: "20px",
+              color: "#FFD700",
+              fontFamily: "var(--font-bebas), Arial, sans-serif",
+              fontSize: "1.3rem",
               letterSpacing: "0.05em",
             }}>
-              {s}
-            </span>
-          ))}
+              YOU&apos;RE IN. WELCOME TO THE CHAOS.
+            </div>
+          ) : (
+            <form onSubmit={handleSubscribe} style={{ display: "flex", gap: "0", maxWidth: "480px", margin: "0 auto" }}>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                required
+                className="newsletter-input"
+                style={{ flex: 1, borderRight: "none" }}
+              />
+              <button
+                type="submit"
+                disabled={subStatus === "loading"}
+                style={{
+                  background: subStatus === "loading" ? "#888888" : "#FFD700",
+                  color: "#0A0A0A",
+                  border: "none",
+                  padding: "14px 24px",
+                  fontFamily: "var(--font-bebas), Arial, sans-serif",
+                  fontSize: "1rem",
+                  letterSpacing: "0.1em",
+                  cursor: subStatus === "loading" ? "not-allowed" : "pointer",
+                  whiteSpace: "nowrap",
+                  transition: "background 0.2s",
+                }}
+              >
+                {subStatus === "loading" ? "SENDING..." : "SEND IT"}
+              </button>
+            </form>
+          )}
+
+          {subStatus === "error" && (
+            <p style={{ color: "#FF3333", fontSize: "0.85rem", marginTop: "12px" }}>
+              Something broke. Try again or send hate mail to tips@spaghettiburritos.com.
+            </p>
+          )}
         </div>
-        <p style={{ color: "#FAFAF8", opacity: 0.2, fontSize: "0.7rem", marginTop: "20px", fontFamily: "Arial, sans-serif" }}>
-          &copy; {new Date().getFullYear()} Spaghetti Burritos. All chaos reserved.
-        </p>
-      </footer>
+      </section>
     </div>
   );
 }

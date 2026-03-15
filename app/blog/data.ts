@@ -149,6 +149,135 @@ The ones that sometimes work are the ones where the person seems genuinely embar
 Most of them fall somewhere in the middle. Competent performance. Unclear sincerity. Audience moves on in a week regardless.`,
   },
   {
+    slug: "gas-station-food-ranking",
+    title: "The Definitive Ranking of Gas Station Foods Nobody Will Admit They Love",
+    seoTitle: "Gas Station Food Ranking: The Foods Nobody Admits Loving | Spaghetti Burritos",
+    seoDescription: "Roller dogs. Nacho cheese that has been sitting since 2019. Beef jerky that costs more than a steak. A definitive and completely serious ranking of gas station foods.",
+    date: "2026-03-14",
+    category: "FOOD",
+    readTime: "5 min read",
+    excerpt: "The roller dog has been spinning since 6am. The nacho cheese has been hot since before you were born. And you are going to eat both of them. This is the definitive gas station food tier list.",
+    content: `Nobody is going to the gas station for groceries. That's what we tell ourselves. That's the lie we repeat. And then at 11pm on a Tuesday we're standing under fluorescent lighting, holding a bag of cheese crackers and a corn dog, and we feel nothing but peace.
+
+Gas station food has a terrible reputation and an incredible product. This is the definitive ranking and it will not be argued with.
+
+S-TIER: The Roller Dog. You know exactly what it is and you know exactly what it's made of and none of that matters because at its best, after exactly the right amount of time on the heat rollers, it achieves a casing snap that no restaurant sausage has ever matched. The hot dog has been industrially perfected. The gas station delivers the industrial perfection. Accept this.
+
+A-TIER: Beef jerky. Yes, it costs $11 for a bag that contains approximately four pieces. Yes, the price-per-ounce is criminally insane. It doesn't matter. Beef jerky is concentrated protein in a format that requires no refrigeration, no utensils, and produces almost no mess. It is the ultimate road food and you will pay whatever they're charging.
+
+A-TIER: The fountain drink situation. Any gas station with a full fountain setup and those giant cups is running a premium beverage operation. You can get a 44-ounce drink for $1.99 in most states. The ice-to-drink ratio is customizable. The combination possibilities are endless. This is luxury pricing, reversed.
+
+B-TIER: Nacho cheese in the dispenser. Is it real cheese? No. Has anyone ever been able to identify exactly what it is? Not definitively. Does it taste like exactly what you want it to taste like when you're eating stale chips from a bag at a gas station? Yes. This is the correct context for this product and it performs perfectly in context.
+
+B-TIER: The packaged pastry section. Honey buns, powdered donuts, those white-frosted mini donuts in the plastic bag. These are not good food. They are incredible food. The sugar content is a medical concern. You will eat them in the car before you leave the parking lot.
+
+C-TIER: Hot sandwiches under the heat lamp. Sometimes they're fine. Sometimes they've been there since the morning rush and it's now 4pm. The variance is too high to rate them higher but when they're fresh they're a genuine value.
+
+D-TIER: The rotating pizza. It's always there. It's always questionable. Somebody buys it. God bless them.
+
+The gas station is not a restaurant. It is not trying to be a restaurant. It has achieved something the restaurant cannot: food that is specifically calibrated for the experience of needing something right now, on the road, at any hour. Respect the institution.`,
+  },
+  {
+    slug: "fantasy-football-friendships",
+    title: "Why Your Fantasy Football League Is Destroying Your Friendships (And Why That's Fine)",
+    seoTitle: "Fantasy Football Is Destroying Your Friendships | Spaghetti Burritos",
+    seoDescription: "The trade that started three separate arguments. The waiver wire claim that ended a seven-year friendship for two weeks. Fantasy football is a chaos machine and we keep playing it.",
+    date: "2026-03-13",
+    category: "SPORTS",
+    readTime: "5 min read",
+    excerpt: "Someone in your league proposed a trade so bad it was insulting. Someone else is texting the group chat at 7am about their injury report. You have never been angrier at people you genuinely like.",
+    content: `Fantasy football turns normal people into chaos agents. Guys who are completely reasonable human beings in every other context will spend forty-five minutes explaining why their waiver claim was sabotaged by the system. Women who run departments, manage teams, and make real decisions at work will lose sleep over a flex start decision. This is normal and it is fine and nobody is stopping.
+
+The specific way fantasy football ruins friendships is fascinating because the actual stakes are usually nothing. Maybe you win $200. Maybe you just get bragging rights. The financial incentive doesn't explain the emotional investment. Something else is happening.
+
+Fantasy football is competitive in a format that removes most ways to compete fairly. You can't control the players. You can't control the injuries. You can't control the schedule. You can only control the roster decisions, the waiver moves, and the trades. And because the randomness is so high, every single loss becomes something someone did wrong. It's never bad luck. It's the injury you didn't predict. The bye week you forgot. The waiver claim you missed by one priority spot.
+
+The trades are where it gets genuinely unhinged. There are three kinds of trade proposers in every league. The first type sends reasonable, fair trades that both teams could accept. They get rejected half the time anyway because people overthink. The second type sends lowball offers so aggressively bad they function as an insult. The third type sends trades at 2am with no context. Someone in your league is the 2am trader. You know who they are.
+
+Then there's the group chat. The fantasy football group chat is one of the most active text threads in the lives of most participants. More active than family threads in most cases. The content is completely unhinged. Injury reports. Accusations of collusion. Someone posting their lineup for feedback and then ignoring all of the feedback. Someone complaining about something every single week. Memes. Arguments. A random off-topic message that turns into a thirty-message side conversation.
+
+Here's why you should keep your league: fantasy football is one of the only things that keeps friend groups in regular contact through adulthood. You lose the forced proximity of school and work over time. The group chat fills that gap. The arguments about whether you should start the running back with a hamstring question are really just an excuse to talk.
+
+The friendships aren't being destroyed. They're being maintained through organized chaos. Keep the league. Keep the drama. Run it back next year.`,
+  },
+  {
+    slug: "group-chat-unwritten-rules",
+    title: "The Unwritten Rules of the Group Chat That Everyone Breaks",
+    seoTitle: "Group Chat Unwritten Rules Everyone Breaks | Spaghetti Burritos",
+    seoDescription: "You know the rules. You've broken them. The double text. The good morning message. The person who responds to a message from six hours ago. Group chats are a lawless society.",
+    date: "2026-03-12",
+    category: "CULTURE",
+    readTime: "4 min read",
+    excerpt: "You know them. You've broken them. The late response to the conversation that already ended. The voice note nobody asked for. The group chat is a society with no police and everyone is a criminal.",
+    content: `Every group chat has rules that nobody wrote down and everybody knows. The rule against leaving someone on read for too long. The rule against sending voice notes when a text would do. The rule against bringing up something serious when the chat has been memes for two weeks. None of these rules are enforced. All of them are violated constantly.
+
+Let's go through them.
+
+Rule one: you do not respond to a conversation that ended four hours ago with a fresh take. The conversation has closed. Everyone moved on. If you arrive late to the chat and have a great point about something that was discussed while you were at work, you let it go. You do not resurrect it. Nobody wants to restart an argument they already finished.
+
+Rule two: read receipts are a social contract. If you have them on, you have to respond in a reasonable window or explain yourself. If you have them off, you can ignore whatever you want and claim you never saw it. Everybody knows this. The person with read receipts off has the most power in any group chat and they know it.
+
+Rule three: the voice note threshold. Voice notes are acceptable for two situations: when you are driving, and when the message is long enough that typing it would take five minutes. Voice notes are not acceptable when the message is three sentences, when the recipient is in a meeting they told you about, or when the voice note is more than 90 seconds without being something that required 90 seconds. People send 4-minute voice notes about minor things. This is a violation.
+
+Rule four: the good morning and good night message. Some group chats have this. The person who opens the chat every morning with "good morning" and closes it every night with an equivalent. This is either endearing or exhausting depending entirely on the group. There is no middle position. You either love it or you are calculating when it would be socially acceptable to finally say something.
+
+Rule five: screenshots stay in the chat. What gets said in the group chat stays in the group chat. This is the most important rule and it gets broken the most. Someone always screenshotted something. Someone always sent it somewhere. You assume someone has screenshots of everything you've ever said. You are probably right.
+
+Rule six: the react acknowledgment. When someone posts news, a photo, or anything personal, the minimum viable response is a reaction. Not a text. Not a question. A reaction. Heart, thumbs up, whatever. This takes two seconds. Failing to react to something personal reads as ignoring it. The react is the bare minimum social maintenance and people still can't manage it consistently.
+
+Every group chat is just people trying to maintain a relationship while also being busy and distracted and kind of bad at communication. The rules exist because without them it would be total chaos. The rules are broken because everyone is human. This is fine. This is how it works.`,
+  },
+  {
+    slug: "fast-food-2am-study",
+    title: "Fast Food Menu Items That Slap at 2AM: A Scientific Study",
+    seoTitle: "Best Fast Food at 2AM: A Scientific Study | Spaghetti Burritos",
+    seoDescription: "The McDouble at 2am hits different than the McDouble at noon. This is not your imagination. This is science. We have studied it and we are sharing the findings.",
+    date: "2026-03-11",
+    category: "FOOD",
+    readTime: "5 min read",
+    excerpt: "The Taco Bell Crunchwrap at 2am is a completely different food than the Taco Bell Crunchwrap at noon. We have studied this phenomenon extensively and present our findings.",
+    content: `There is a real phenomenon where food consumed after midnight tastes different than the same food consumed during normal hours. Scientists call this hunger modulation and circadian rhythm effects on taste perception. We call it the 2am principle. The finding is the same: your body and brain process food differently at 2am and fast food is specifically engineered to benefit from this.
+
+The study was conducted over a significant period at multiple locations. Here are the findings.
+
+The McDouble. At noon, the McDouble is a serviceable budget item. It is fine. It accomplishes the task of being a sandwich. At 2am, the McDouble achieves something approaching transcendence. The salt content hits exactly right. The cheese has melted in a way that somehow never happens at lunch. The bun has a softness that cannot be replicated in daylight. This is the single best price-to-hit ratio item in fast food at late hours. One dollar and ninety-nine cents. Undefeated.
+
+The Taco Bell Crunchwrap Supreme. This is an engineering achievement at any hour but at 2am it becomes something you think about for days after. The combination of textures — crispy tostada, soft tortilla, the specific warmth of seasoned beef — is calibrated for peak consumption when your taste sensitivity is running on fumes and ambient noise. The Crunchwrap was designed for 2am. There is no other explanation for its existence.
+
+Wendy's spicy chicken. The spice hits differently at 2am. The nervous system at this hour is more sensitive to capsaicin compounds. The result is that the same sandwich that reads as medium heat at 6pm reads as genuinely hot at 2am. This is not a complaint. This is an upgrade.
+
+McDonald's large fries, eaten in the car immediately after receiving them. This is time-sensitive. The window is three minutes. In that window, the fries are the best fries in the world. After three minutes they begin to deteriorate and they never recover. At 2am, in the parking lot, fresh bag open, this three-minute window is the best culinary moment available in America for under five dollars.
+
+The chalupa. The chalupa shell exists in a category by itself. The fried bread exterior on a taco is an innovation that the rest of the industry has never properly adopted. At 2am, the chalupa is the correct choice at every Taco Bell visit and anyone who orders otherwise is making a mistake.
+
+Control group finding: food consumed at 2am in a drive-through, after a long day or night, eaten in a car or on a couch, will always taste better than the same food consumed in a well-lit environment at noon. The context is part of the flavor. The late hour, the relief of the food arriving, the specific state of being tired and hungry simultaneously — these inputs enhance the sensory experience.
+
+The science is clear. Eat the 2am fast food. There are no wrong choices, only suboptimal ones.`,
+  },
+  {
+    slug: "mount-rushmore-overrated-things",
+    title: "The Mount Rushmore of Overrated Things People Pretend to Like",
+    seoTitle: "Mount Rushmore of Overrated Things | Spaghetti Burritos",
+    seoDescription: "Brunch. Wine. Hiking. Live music at bars where you can't hear anything. These are the four faces on the Mount Rushmore of things people pretend to enjoy.",
+    date: "2026-03-10",
+    category: "DEGENERATE",
+    readTime: "4 min read",
+    excerpt: "Four things have been carved into the mountain of overrated experiences that people perform enjoyment of. We are naming them. We are standing by this.",
+    content: `The Mount Rushmore format demands that we take four things and declare them the greatest representatives of a category. We are using this format to identify the four faces of overrated experiences — the activities and things that a significant portion of society performs enthusiasm for in public while privately finding them fine at best.
+
+This is not about bad things. Overrated is different from bad. These things are fine. Some are even good. But the gap between how they're described and how they're experienced is where the overrating lives.
+
+FACE ONE: Brunch. Brunch is breakfast food at lunch prices with a 45-minute wait and an obligation to drink before noon. The food itself is not special. Eggs are eggs. The pancakes are the same pancakes available at 7am with no wait. What brunch actually is: a social ritual disguised as a meal. People don't go to brunch because they can't eat breakfast or lunch. They go because brunch provides a two-hour social structure. This is fine and valid. It is not necessary to also pretend the food is exceptional.
+
+FACE TWO: Wine. Humans have been convinced through a sophisticated and long-running cultural campaign that wine appreciation is a skill worth developing. That some people can distinguish notes of tobacco and cherry and minerals in a glass. That the difference between a $15 bottle and an $80 bottle is detectable by a trained palate. Multiple studies have shown that wine experts cannot reliably identify bottles in blind tastings. The most consistent finding: people prefer wine when they're told it's expensive. The product is status, not flavor. The flavor is fine.
+
+FACE THREE: Hiking. At some point it was collectively decided that walking outside in difficult terrain was a recreational activity worth driving two hours each way to experience. People buy specific boots, specific socks, specific pants, a specific kind of backpack. They describe the physical discomfort as the reward. Here is what hiking is: walking, but harder, and farther from where you parked. For some people this is genuinely enjoyable and good for them. For a significant percentage of people who do it and post about it, it is performed outdoorsmanship. The mountain will be there whether you go up it or not.
+
+FACE FOUR: Live music at bars where you cannot hear anything. The band is playing at a volume that prevents conversation. You are standing. There are no seats or you cannot get to them. The drink line is long. You are paying bar prices for the privilege of experiencing all of this. The music sounds worse in the venue than it does recorded because live venue acoustics are extremely variable. People go to this because declining to go reads as not being a music person. Being a music person is good. There are better venues for actually hearing music. The bar show exists for the story, not the song.
+
+We are not telling you to stop doing any of these things. We are telling you it's fine to admit that brunch is just eggs, wine is just wine, hiking is just walking, and the bar show was too loud.`,
+  },
+  {
     slug: "twitch-youtube-kick-2026",
     title: "Twitch vs YouTube vs Kick: Which Platform Is Actually Winning Streamers in 2026?",
     seoTitle: "Twitch vs YouTube vs Kick in 2026 | Spaghetti Burritos",
