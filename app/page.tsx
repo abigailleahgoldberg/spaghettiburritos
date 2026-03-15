@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { posts } from "./blog/data";
+import { redditStories } from "./data/reddit-stories";
 
 const tickerItems = [
   "BREAKING: local man has opinions about strangers on the internet",
@@ -37,6 +38,7 @@ export default function Home() {
 
   const latestPosts = posts.slice(0, 4);
   const trendingPosts = posts.slice(0, 4);
+  const featuredRedditStories = redditStories.slice(0, 3);
 
   async function handleSubscribe(e: React.FormEvent) {
     e.preventDefault();
@@ -366,6 +368,132 @@ export default function Home() {
               </Link>
             );
           })}
+        </div>
+      </section>
+
+      {/* REDDIT DRAMA VAULT */}
+      <div style={{
+        maxWidth: "1100px",
+        margin: "0 auto 0",
+        padding: "0 24px",
+        height: "2px",
+        background: "linear-gradient(90deg, transparent, rgba(255,51,51,0.3), transparent)",
+      }} />
+
+      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "64px 24px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "40px", flexWrap: "wrap" }}>
+          <div style={{
+            background: "#FF3333",
+            color: "#F0F0F0",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1rem",
+            letterSpacing: "0.15em",
+            padding: "4px 14px",
+          }}>
+            FICTION
+          </div>
+          <h2 style={{
+            fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+            fontSize: "2rem",
+            letterSpacing: "0.05em",
+            margin: 0,
+            color: "#F0F0F0",
+          }}>
+            FROM THE INTERNET&apos;S DRAMA VAULT
+          </h2>
+          <div style={{ flex: 1, height: "2px", background: "linear-gradient(90deg, rgba(255,51,51,0.4), transparent)" }} />
+        </div>
+
+        <p style={{
+          color: "#888888",
+          fontSize: "0.88rem",
+          lineHeight: 1.7,
+          marginBottom: "32px",
+          maxWidth: "640px",
+          fontFamily: "var(--font-inter), Arial, sans-serif",
+        }}>
+          AI fiction inspired by real internet drama. All stories are completely fictional — names changed, details invented, everything exaggerated.
+        </p>
+
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+          gap: "20px",
+          marginBottom: "40px",
+        }}>
+          {featuredRedditStories.map((story) => {
+            const accentColor = getCatColor(story.category);
+            return (
+              <Link key={story.slug} href={`/reddit/${story.slug}`} style={{ textDecoration: "none" }}>
+                <article className="post-card">
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "6px" }}>
+                    <span style={{
+                      background: accentColor,
+                      color: "#0A0A0A",
+                      fontSize: "0.62rem",
+                      fontWeight: 900,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      padding: "3px 8px",
+                    }}>
+                      {story.category}
+                    </span>
+                    <span style={{ color: "#555555", fontSize: "0.68rem", fontFamily: "var(--font-inter), Arial, sans-serif" }}>
+                      r/{story.subreddit}
+                    </span>
+                  </div>
+
+                  <h3 style={{
+                    fontFamily: "var(--font-bebas), 'Arial Black', Arial, sans-serif",
+                    fontSize: "1.45rem",
+                    lineHeight: 1.1,
+                    margin: 0,
+                    letterSpacing: "0.02em",
+                    color: "#F0F0F0",
+                  }}>
+                    {story.headline}
+                  </h3>
+
+                  <p style={{
+                    color: "#888888",
+                    fontSize: "0.85rem",
+                    lineHeight: 1.6,
+                    margin: 0,
+                    flex: 1,
+                    fontFamily: "var(--font-inter), Arial, sans-serif",
+                  }}>
+                    {story.story.split("\n")[0].slice(0, 120)}...
+                  </p>
+
+                  <span style={{
+                    color: accentColor,
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                  }}>
+                    Read Fiction &rarr;
+                  </span>
+                </article>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div style={{ textAlign: "center" }}>
+          <Link href="/reddit" style={{
+            border: "2px solid rgba(255,51,51,0.4)",
+            color: "#FF3333",
+            textDecoration: "none",
+            fontFamily: "var(--font-bebas), Arial, sans-serif",
+            fontSize: "1.1rem",
+            letterSpacing: "0.12em",
+            padding: "12px 36px",
+            display: "inline-block",
+            transition: "border-color 0.2s",
+          }}>
+            SEE ALL REDDIT DRAMA
+          </Link>
         </div>
       </section>
 

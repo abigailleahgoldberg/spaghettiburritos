@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { posts } from "./blog/data";
+import { redditStories } from "./data/reddit-stories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://spaghettiburritos.com";
@@ -7,6 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = posts.map((post) => ({
     url: `${base}/blog/${post.slug}`,
     lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const redditStoryPages = redditStories.map((story) => ({
+    url: `${base}/reddit/${story.slug}`,
+    lastModified: new Date(story.date),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -20,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/reddit`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
@@ -61,5 +75,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     ...blogPosts,
+    ...redditStoryPages,
   ];
 }
