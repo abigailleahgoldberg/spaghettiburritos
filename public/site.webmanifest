@@ -1,0 +1,10 @@
+{
+  "name": "Spaghetti Burritos",
+  "short_name": "SpagBurr",
+  "description": "Fusion food adventures and recipe experiments that break all the rules.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FF6B35",
+  "theme_color": "#FF6B35",
+  "icons": [{ "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }]
+}
