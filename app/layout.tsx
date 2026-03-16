@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://spaghettiburritos.com',
+  },
 };
 
 export default function RootLayout({
@@ -46,6 +49,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bebasNeue.variable} ${inter.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Spaghetti Burritos",
+          "url": "https://spaghettiburritos.com",
+          "description": "The internet's worst best website. Hot takes, degenerate opinions, streamer drama, pop culture chaos, sports rants, and food crimes. No filter."
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Spaghetti Burritos",
+          "url": "https://spaghettiburritos.com"
+        }) }} />
+      </head>
       <body style={{
         margin: 0,
         padding: 0,

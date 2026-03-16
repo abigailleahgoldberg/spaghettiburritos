@@ -69,6 +69,12 @@ export default function Footer() {
           <p style={{ color: "#888888", fontSize: "0.75rem", margin: 0 }}>
             Powered by The Voice of Cash Team
           </p>
+          <div style={{ width: "100%", display: "flex", gap: "20px", flexWrap: "wrap", alignItems: "center", paddingTop: "12px" }}>
+            <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "rgba(255,215,0,0.4)", letterSpacing: "0.12em", textTransform: "uppercase" }}>Chaotic Sources</span>
+            <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>Reddit — Where opinions come from →</a>
+            <a href="https://www.theringer.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>The Ringer →</a>
+            <a href="https://deadspin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>Deadspin →</a>
+          </div>
         </div>
       </div>
     </footer>
