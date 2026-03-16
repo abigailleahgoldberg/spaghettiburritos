@@ -83,6 +83,8 @@ export default function Footer() {
             <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>Reddit — Where opinions come from →</a>
             <a href="https://www.theringer.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>The Ringer →</a>
             <a href="https://deadspin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>Deadspin →</a>
+            <a href="https://apnews.com" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>AP News — Real news we borrow from →</a>
+            <a href="https://www.poynter.org" target="_blank" rel="noopener noreferrer" style={{ color: "#888888", fontSize: "0.75rem", textDecoration: "none" }}>Poynter — Journalism Ethics →</a>
           </div>
         </div>
       </div>
