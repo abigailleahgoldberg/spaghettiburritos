@@ -49,6 +49,15 @@ export default function Footer() {
           <Link href="/terms" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
             TERMS
           </Link>
+          <Link href="/disclaimer" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            DISCLAIMER
+          </Link>
+          <Link href="/dmca" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            DMCA
+          </Link>
+          <Link href="/contact" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
+            CONTACT
+          </Link>
           <a href="mailto:tips@spaghettiburritos.com" style={{ color: "#888888", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.05em" }}>
             SEND TIPS
           </a>
