@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     url: "https://spaghettiburritos.com",
     siteName: "Spaghetti Burritos",
     type: "website",
+    images: [{ url: "https://spaghettiburritos.com/favicon.ico", width: 64, height: 64, alt: "Spaghetti Burritos" }],
   },
   twitter: {
     card: "summary_large_image",
