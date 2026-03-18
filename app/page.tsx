@@ -164,7 +164,7 @@ export default function Home() {
             padding: "14px 40px",
             display: "inline-block",
           }}>
-            GET THE TAKES
+            WET NOODLE NEWS
           </a>
         </div>
       </section>
@@ -573,7 +573,7 @@ export default function Home() {
             padding: "4px 14px",
             marginBottom: "20px",
           }}>
-            FREE. UNSUBSCRIBE ANYTIME. PROBABLY WON&apos;T THO.
+            THE WET NOODLE NEWS — FREE. WEEKLY. PROBABLY UNHINGED.
           </div>
 
           <h2 style={{
@@ -583,13 +583,12 @@ export default function Home() {
             margin: "0 0 16px",
             color: "#F0F0F0",
           }}>
-            GET THE TAKES<br />
-            <span style={{ color: "#FFD700" }}>NOBODY ASKED FOR</span>
+            WET NOODLE<br />
+            <span style={{ color: "#FFD700" }}>NEWS</span>
           </h2>
 
           <p style={{ color: "#888888", fontSize: "1rem", lineHeight: 1.7, marginBottom: "32px" }}>
-            Delivered to your inbox. Hot takes, degenerate opinions, and content
-            your therapist would call a red flag. Subscribe or don&apos;t. We&apos;ll be fine.
+            Every week: one overcooked take, one undercooked opinion, and one story your algorithm was too scared to show you. Wet. Noodle. News.
           </p>
 
           {subStatus === "done" ? (
@@ -602,7 +601,7 @@ export default function Home() {
               fontSize: "1.3rem",
               letterSpacing: "0.05em",
             }}>
-              YOU&apos;RE IN. WELCOME TO THE CHAOS.
+              YOU&apos;RE IN. WELCOME TO THE NOODLE.
             </div>
           ) : (
             <form onSubmit={handleSubscribe} style={{ display: "flex", gap: "0", maxWidth: "480px", margin: "0 auto" }}>
