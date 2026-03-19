@@ -12,6 +12,39 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "your-bracket-is-already-dead",
+    title: "Your Bracket Is Already Dead and That's the Point",
+    seoTitle: "Your March Madness Bracket Is Dead and That's the Point | Spaghetti Burritos",
+    seoDescription: "You spent 20 minutes on your bracket. A 12-seed destroyed it in 40 minutes of play. This is exactly how March Madness was supposed to go.",
+    date: "2026-03-20",
+    category: "Sports",
+    readTime: "4 min read",
+    excerpt: "You spent 20 minutes on your bracket. A 12-seed just destroyed it in the first 40 minutes of play. Welcome to March Madness. This is exactly how it was supposed to go.",
+    content: `You spent 20 minutes on that bracket. You did research. You looked at the seeds, the records, the strength of schedule. You had a system. Maybe you went chalk. Maybe you had a couple cute upsets that made you feel smart. Either way, a 12-seed just annihilated your first round and half your bracket is already ash.
+
+This is not a failure. This is the event.
+
+Here's the thing about the 12-over-5 upset: it happens every single year. Not some years. Every year. It has happened in 36 of the last 39 tournaments. The 12-seed beating the 5 is not an upset anymore. It is a tradition. It is as reliable as the ball dropping on New Year's Eve. And somehow, every March, 20 million people still don't pick it. They look at the 5-seed, they look at the conference they came from, and they think: not this time.
+
+It is always this time.
+
+The bracket was never meant to survive the first weekend. That's not the point of it. The bracket is a ritual. It's a permission slip to care about 64 teams you haven't thought about since last March. It's a reason to text people you haven't talked to in months. It's the thing that makes a random Thursday afternoon in March feel like a national holiday.
+
+The chaos is the product.
+
+Look at what happened in the WBC this week. Venezuela knocked out defending champion Japan. Nobody saw it coming. A 5-seed just bounced a 2. Upsets aren't surprises anymore — they're the norm. The chalk is what's actually surprising now. Favorites are losing at a rate that should make anyone with a carefully constructed bracket feel like an optimist in a reality that has never once rewarded optimism.
+
+And yet. We fill them out every year. We pick our alma mater to make a run. We take the mid-major we saw on ESPN once. We make one bold call we'll either brag about for a decade or quietly never mention again.
+
+That's the move, by the way. If you want a bracket strategy that actually holds up: pick chalk for 75% of the field, choose one massive upset per round that you genuinely believe in, and then let go. The bracket is not a prediction. It's a conversation starter. It's the reason you're watching a game between two schools you couldn't find on a map.
+
+The madness isn't a bug. It's the whole reason we show up. It's why this tournament has survived and thrived for decades while other sports products have struggled to hold attention. You cannot manufacture the moment a 15-seed cuts down the nets. You cannot script the guy who scores 40 points that nobody outside his campus has ever heard of. It just happens. Every year it just happens.
+
+Your bracket died so you could remember why you love March.
+
+Which upset already wrecked your bracket? Drop it below.`,
+  },
+  {
     slug: "venezuela-upset-wbc-baseball-forever",
     title: "The Upset That Nobody Saw Coming: Venezuela Just Changed Baseball Forever",
     seoTitle: "Venezuela Upsets Japan at World Baseball Classic | Spaghetti Burritos",
