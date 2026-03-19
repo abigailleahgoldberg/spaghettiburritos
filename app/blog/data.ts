@@ -12,6 +12,35 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "venezuela-upset-wbc-baseball-forever",
+    title: "The Upset That Nobody Saw Coming: Venezuela Just Changed Baseball Forever",
+    seoTitle: "Venezuela Upsets Japan at World Baseball Classic | Spaghetti Burritos",
+    seoDescription: "Venezuela knocked out defending champion Japan at the WBC. Wilyer Abreu. 6th inning. Go-ahead 3-run bomb. The upset of the year and most casual fans missed it.",
+    date: "2026-03-19",
+    category: "Sports",
+    readTime: "4 min read",
+    excerpt: "Japan was the defending champion. Venezuela had a 3-run homer in the 6th and the crowd in Miami lost its mind. The chalk doesn't always cash.",
+    content: `Venezuela just knocked out Japan at the World Baseball Classic. Defending champions. Best team in the world on paper. Gone.
+
+Wilyer Abreu stepped up in the 6th inning with Venezuela trailing and hit a go-ahead 3-run homer that sent the crowd in Miami completely sideways. You might not have seen it. Most casual fans didn't. That's the problem with baseball's biggest international stage — it happens fast and if you're not paying attention, the best moments disappear.
+
+But this one deserves your attention.
+
+Japan came in as favorites for a reason. Their roster reads like a murderer's row. Deep pitching. Elite contact hitters. The kind of disciplined, complete team that wins tournaments by grinding you into dust over nine innings. Venezuela wasn't supposed to be able to match that.
+
+Venezuela had something else. They had Maikel Garcia. Eugenio Suarez. Wilyer Abreu — a name casual fans are about to learn whether they want to or not. And they had a fanbase that shows up to an outdoor baseball game in March like it's a World Series Game 7 in October. The energy in that stadium was a different sport entirely.
+
+The same day USA beat the Dominican Republic. That means the World Baseball Classic Final is set: USA vs Venezuela. The two teams the casual sports fan can actually get behind. And it sets up a storyline that writes itself.
+
+Here's the bracket weekend angle that makes this shareable right now: it is March. Everyone is watching giants fall in college basketball. The 12-seed beating the 5. The upstart mid-major knocking out a blue blood. That is the entire appeal of this time of year — the reminder that on a given day, preparation and hunger can beat pure talent and reputation.
+
+Venezuela beat Japan. Today. On the biggest international baseball stage there is. The chalk didn't cash.
+
+The 2026 WBC Final is USA vs Venezuela. If you know sports, you know what this means. If Venezuela wins, it is one of the great underdog stories in recent international sports. If USA wins, it is a coronation. Either way, do not sleep on this.
+
+Drop your WBC Final pick in the comments. USA or Venezuela?`,
+  },
+  {
     slug: "streamer-drama-same-script",
     title: "Why Every Streamer Drama Follows the Same Script (And We All Keep Watching)",
     seoTitle: "Every Streamer Drama Follows the Same Script | Spaghetti Burritos",
