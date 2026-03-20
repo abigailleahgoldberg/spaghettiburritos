@@ -12,6 +12,68 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "nebraska-first-tournament-win",
+    title: "Nebraska Finally Won a Tournament Game and the Internet Lost Its Mind",
+    seoTitle: "Nebraska First NCAA Tournament Win — The Internet Lost Its Mind | Spaghetti Burritos",
+    seoDescription: "Nebraska just won their first NCAA Tournament game in program history. The last Power Five school to do it. A moment 40 years in the making.",
+    date: "2026-03-20",
+    category: "Sports",
+    readTime: "4 min read",
+    excerpt: "Nebraska just won their first NCAA Tournament game in program history. The last Power Five school to do it. A moment 40 years in the making. And the internet had exactly the reaction you'd expect.",
+    content: `Nebraska just won their first NCAA Tournament game in program history. Let that sit for a second.
+
+Not just their first win in a few years. Their first. Ever. The last Power Five program in the country to do it. A school with 100,000 fans showing up every Saturday to watch football, a stadium that becomes the third-largest city in Nebraska on game days, a tradition so deep it has its own mythology — and until yesterday, they had never won a single NCAA Tournament basketball game.
+
+That's not a stat. That's an identity. An entire fanbase has spent decades building a running joke they didn't ask for.
+
+Nebraska basketball has been the punchline for so long that being the punchline became part of who they were. You knew it going into every season. The football program prints money and puts people in the Pro Football Hall of Fame. The basketball program loses in February and disappears. That was just the deal.
+
+Except yesterday it wasn't.
+
+When the buzzer hit and Nebraska had their win, something happened that only March Madness can produce. A gym full of people — students, alumni, casual fans who saw the clip on Twitter, people who couldn't name a single player on the roster — completely lost it. Not because the stakes were enormous. This is a first round game. The stakes are objectively not that serious.
+
+But they were crying. Actual tears. Because that's what 40 years of waiting does to a fanbase. The suffering was the point. The payoff only hits as hard as the wait, and Nebraska fans have been waiting longer than almost anyone alive can remember.
+
+This is the thing about sports that makes no rational sense and perfect emotional sense at the same time. The attachment isn't logical. Nebraska basketball has given their fans almost nothing to hold onto. And yet when the moment finally came, the reaction was proportional to every single year of watching it not happen.
+
+The longest droughts produce the loudest celebrations.
+
+Nebraska basketball is no longer the punchline. They are the feel-good story of the first round. They earned it in the most March Madness way possible: by making everyone who picked against them feel briefly stupid, and making everyone who forgot they existed feel something they weren't expecting to feel.
+
+What's the longest your team has made you wait? Tell us below.`,
+  },
+  {
+    slug: "passover-april-fools-day-god-has-jokes",
+    title: "Passover Starts on April Fool's Day This Year and God Has Jokes",
+    seoTitle: "Passover Starts on April Fool's Day 2026 and God Has Jokes | Spaghetti Burritos",
+    seoDescription: "Passover starts April 1, 2026. April Fool's Day. You can't make this up. Or maybe God can.",
+    date: "2026-03-20",
+    category: "Internet Chaos",
+    readTime: "3 min read",
+    excerpt: "Passover starts on April Fool's Day this year. April 1, 2026. You can't make this up. Or maybe God can.",
+    content: `Passover starts on April Fool's Day this year. April 1, 2026. Not metaphorically. Literally. The first night of Passover, the holiday commemorating the Jewish people's escape from slavery in Egypt, falls on the same calendar day as the annual tradition of convincing people that something fake is real.
+
+You cannot make this up. Or maybe God can. This feels like God's bit.
+
+Passover is already the most theatrical holiday on the Jewish calendar. There is a specific meal with specific symbolic foods and a specific order of rituals that has been more or less the same for thousands of years. There are four cups of wine. There are four questions. There is a piece of bread you hide from children and then make them find it in exchange for money. There are ten plagues you read aloud around a dinner table, which, for the record, involves everyone at the table saying "locusts" out loud like it's completely normal.
+
+April Fool's is the day where everyone pretends bad things are happening and then says "just kidding."
+
+The overlap here is genuinely beautiful.
+
+"Let my people go" hits different when it lands on the same day as "gotcha." Moses showing up at Pharaoh's door on April 1st and saying "God says release the Israelites or there will be frogs" and Pharaoh going "nice try, next" — that's just comedy. That's the bit.
+
+Imagine explaining Passover to someone who doesn't celebrate it, but you have to explain it on April 1st specifically. "So you eat symbolic bitter herbs to remember suffering, you pour wine for a prophet who doesn't show up, and also today is the day everyone lies to each other." Yes. Welcome to the table. Wash your hands twice.
+
+The plague jokes write themselves. "Hey, just got a text from Egypt, looks like there's a locust situation." "April Fool's?" "April Fool's." Ten rounds of this. Every single plague.
+
+For Jewish families who celebrate both holidays, this year's Seder is going to require a ground rule discussion before anyone sits down. No April Fool's at the Seder table. Or, alternatively, full April Fool's at the Seder table and just accept the consequences.
+
+God set the calendar. We're just living in it.
+
+What's your best Passover on April Fool's Day joke? Drop it below and we'll post the best ones.`,
+  },
+  {
     slug: "your-bracket-is-already-dead",
     title: "Your Bracket Is Already Dead and That's the Point",
     seoTitle: "Your March Madness Bracket Is Dead and That's the Point | Spaghetti Burritos",
