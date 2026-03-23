@@ -12,6 +12,116 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "tom-brady-flag-football-48-retirement-joke",
+    title: "Tom Brady Played Flag Football at 48 and Looked Better Than Half the Active QBs in the League",
+    seoTitle: "Tom Brady Flag Football at 48 — Better Than Half the NFL | Spaghetti Burritos",
+    seoDescription: "Tom Brady played flag football at 48 and looked better than half the active QBs in the NFL. The retirement that never sticks, and why that's actually hilarious.",
+    date: "2026-03-23",
+    category: "Sports",
+    readTime: "5 min read",
+    excerpt: "Tom Brady played flag football at 48 and still looked sharper than guys half his age cashing NFL paychecks. The man cannot stop. He won't stop. He is constitutionally incapable of stopping.",
+    content: `Tom Brady played flag football last weekend.
+
+Not for a charity event. Not to keep the body warm. Tom Brady laced up his cleats, walked onto a field with people who were literally in diapers when he won his first Super Bowl, and proceeded to make it look like the last 25 years of NFL quarterbacking were a warmup act.
+
+He's 48 years old. His backup plan for retirement is apparently still football.
+
+Let's be clear about what happened here. The man who spent three years "retiring" — twice officially, once spiritually, once in a Fox Sports studio — could not keep himself away from throwing a football in competitive conditions. And the worst part? He was good. Like, actually good. Sharp releases, accurate ball placement, reading the field like he still has the defensive film package memorized. Meanwhile, actual active NFL quarterbacks are out here throwing four picks in December and keeping their starting jobs.
+
+The retirement arc on this man is genuinely one of the great comedy bits in modern sports history. Brady retired in February 2022. Came back 40 days later. Retired again in February 2023 for real this time. Spent two years in TV, sat through an entire NFL season calling games, and apparently decided that watching football was worse than playing it at nearly 50 years old.
+
+Now compare that to Aaron Rodgers.
+
+Aaron Rodgers tore his Achilles four snaps into the 2023 season, spent an entire year rehabbing, came back looking like a guy who was rehabbing an Achilles, and has spent the better part of two years explaining that he's not done yet. He's still on an active roster. He's still very much in the "playing NFL quarterback" business. But here's the thing — Brady walked away and looks sharper in a flag game than Rodgers has looked in a real one.
+
+This is the retirement credibility gap that nobody wants to talk about.
+
+Brady's retirements were fake but his arm is real. Rodgers' career is real but his performance lately has everyone doing the uncomfortable math on whether it should be. Brady stepped away twice and came back twice looking like Brady. Rodgers stayed and now we watch every start wondering if this is the one where it finally clicks back into place.
+
+The question nobody is asking out loud: at what point does Brady's flag football tape become more exciting than Rodgers' actual game tape?
+
+There's also something deeply funny about the public reaction every time Brady does this. Half the internet acts outraged — "let the man retire in peace!" — as if Tom Brady is doing something to us personally by refusing to be done. He's not. He's playing flag football. He's a wealthy 48-year-old who loves throwing a football and is very good at it. That's not a problem to solve. That's just what the guy is.
+
+The other half of the internet wants the NFL to sign him. Which, honestly? Not the worst idea anyone's ever had.
+
+Let's talk about the actual NFL for a second. Right now, there are at minimum six active starting quarterbacks who you could describe, generously, as "a work in progress." Teams in various stages of quarterback despair are watching Brady throw routes in a flag league and thinking thoughts they shouldn't be thinking. Brady himself has said he doesn't want to come back. Probably. Maybe. He said that before, too.
+
+The move Brady should make is just never fully commit to being done. Keep showing up to flag games. Keep looking good. Make every NFL front office in quarterback trouble spend three days a month wondering if they should make a call. That's power. That's leverage. That's the most Brady thing imaginable.
+
+He played 23 years in the NFL. Won seven Super Bowls. Retired twice. And is now using flag football to remind everyone that he's still the standard by which quarterbacks get measured.
+
+The retirement that never sticks has become its own legacy. And somehow, that's exactly right.
+
+**POLL: Should the NFL give Tom Brady a ceremonial roster spot?**
+- Yes, he earned it and would probably start
+- No, let the man play his flag games in peace
+- Only if he promises to actually stay retired after
+- Sign him immediately, he's better than my team's QB
+
+Drop your vote in the comments. And if you're an NFL GM reading this — you know how to reach him.`,
+  },
+  {
+    slug: "your-2026-bracket-is-dead-and-we-are-thriving",
+    title: "Your 2026 March Madness Bracket Is Already Dead and We Are Absolutely Thriving",
+    seoTitle: "Your 2026 March Madness Bracket Is Dead — We Are Thriving | Spaghetti Burritos",
+    seoDescription: "Your 2026 March Madness bracket is dead. It died fast. We watched it happen and we felt nothing. Here's the full grieving process, from false confidence to acceptance.",
+    date: "2026-03-23",
+    category: "Sports",
+    readTime: "5 min read",
+    excerpt: "Your bracket is dead. Mine is dead. Everyone's bracket is dead. We did this to ourselves with complete confidence and zero evidence. And somehow, we are okay.",
+    content: `Your bracket is dead.
+
+Not dying. Not struggling. Not "still mathematically alive if three things break right." Dead. Buried. Eulogized by a 12-seed you'd never heard of before Thursday afternoon who went and did exactly what 12-seeds do to the people who didn't pick them.
+
+And we are absolutely, completely, without question thriving.
+
+This is the part of March Madness nobody tells you about before you fill out your first bracket. They tell you about the cinderella stories. They tell you about buzzer beaters. They tell you about One Shining Moment playing over a highlight reel that will make you feel feelings you can't explain. What they don't tell you is that there is a very specific kind of joy that comes from watching everyone else's bracket burn at exactly the same time as yours.
+
+Shared suffering. It's what this tournament was built on.
+
+Let's trace the bracket death cycle, because it happens the same way every year and yet we never see it coming.
+
+**Phase 1: The False Confidence**
+
+The week before the tournament, you are a genius. You have done the research. You've watched highlights. You've read the metrics. You know which mid-majors are dangerous and which high seeds are frauds. You filled out your bracket with the energy of someone who has figured out something the rest of the field has not.
+
+Your Final Four makes sense. Your champion pick is logical. You have explained to at least one person in your office pool why their bracket is bad, using words like "efficiency rating" and "experience in close games." You believe everything you are saying.
+
+You submit the bracket. You feel good. You are briefly the smartest person in the room.
+
+**Phase 2: The First Game**
+
+It is 12:15 PM on Thursday. The tournament has been going for forty-five minutes. Your bracket is already wrong.
+
+Not wrong in a "well, that's one game" way. Wrong in a "I just watched the entire structural foundation of my Final Four get eliminated in the first half" way. The 5-seed you had going to the Elite Eight is down 14 to a team from a conference you cannot find on a map. The 1-seed you had winning it all is struggling against a school with an enrollment of 4,000 people.
+
+You still have 63 games left and you are already in damage control.
+
+**Phase 3: The Denial Math**
+
+This phase is characterized by complex arithmetic performed entirely in your head to calculate scenarios in which your bracket is still "technically fine." You tell yourself things like "I only need two of my Final Four to hold" and "the bracket reseeds anyway" (it doesn't) and "a lot of people probably got this wrong too" (some did, but not in the exact same ways as you).
+
+You check your ESPN bracket score approximately every four minutes. You have done no actual work since noon on Thursday. You have notifications turned on for games involving schools you have no personal connection to because you made a wrong pick.
+
+**Phase 4: The Acceptance**
+
+Somewhere around Saturday afternoon, something shifts. You look at your bracket — genuinely look at it — and you acknowledge what it is. It is a document that you created with confidence and optimism and a complete absence of psychic ability, and it is now worth nothing, and that is fine.
+
+Because everyone else is in the same place.
+
+Your coworker who picked the chalk and called it "safe"? Their Final Four has one team left. Your friend who "always picks the 12-5 upsets"? They picked the wrong 12-seeds. The person in your pool who filled it out in three minutes without looking at any stats? They're in second place and they don't even know why.
+
+This is the beauty of March Madness. It is the great equalizer. The tournament doesn't care about your research or your confidence or your methodology. It is 68 teams playing basketball under pressure in front of enormous crowds, and weird things happen constantly, and nobody saw them coming, and that's the whole point.
+
+Your bracket is dead. Long live the bracket.
+
+**One last question before we close this out:**
+
+We want to know — who killed your 2026 bracket first? Was it a 12-seed doing what 12-seeds do? A 1-seed that had no business losing in the first round? A team you had going all the way that lost by 30 to a school you've never seen on a TV schedule before?
+
+Drop it in the comments. Name the team. Tell us how it happened. The more painful, the better. We're all in this together.`,
+  },
+  {
     slug: "nebraska-first-tournament-win",
     title: "Nebraska Finally Won a Tournament Game and the Internet Lost Its Mind",
     seoTitle: "Nebraska First NCAA Tournament Win — The Internet Lost Its Mind | Spaghetti Burritos",
