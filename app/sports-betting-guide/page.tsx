@@ -10,7 +10,7 @@ export default function SportsBettingGuidePage() {
   return (
     <div style={{minHeight:'100vh',background:'#0a0a0a',color:'#f5f5f5',fontFamily:'system-ui,sans-serif'}}>
       <nav style={{padding:'16px 5vw',borderBottom:'1px solid #1a1a1a',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-        <Link href="/" style={{fontWeight:900,fontSize:20,color:'#f5f5f5',textDecoration:'none'}}>🌮 Spaghetti Burritos</Link>
+        <Link href="/" style={{fontWeight:900,fontSize:20,color:'#f5f5f5',textDecoration:'none'}}> Spaghetti Burritos</Link>
         <Link href="/blog" style={{color:'rgba(255,255,255,0.5)',textDecoration:'none',fontSize:14}}>← Back to Blog</Link>
       </nav>
       <div style={{maxWidth:800,margin:'0 auto',padding:'60px 5vw'}}>
