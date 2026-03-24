@@ -10,7 +10,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[
+export const posts: BlogPost[] = [
   {
     slug: 'masters-2026-who-wins-augusta',
     title: 'The Masters 2026: Five Guys Who Could Win Augusta and One Who Absolutely Will Not',
