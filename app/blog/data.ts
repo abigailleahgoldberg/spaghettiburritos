@@ -30,7 +30,7 @@ Tiger Woods will not win the Masters. We say this with love and with full recogn
 The Masters starts April 10. Clear your Sunday afternoon.`,
     date: '2026-03-24',
     category: 'Sports',
-    readTime: 5
+    readTime: '5 min read'
   },
   {
     slug: 'caitlin-clark-effect-womens-sports-2026',
@@ -47,7 +47,7 @@ The counterargument is that the attention is not really about basketball, it is 
 The genuine question for 2026 is whether the growth is structural or whether it was a Clark-specific spike. We will find out. The drafts are being watched. The storylines are being built. The league is investing. Whether this is a permanent inflection point or a three-year window is the actual sports business question of our era.`,
     date: '2026-03-24',
     category: 'Sports',
-    readTime: 6
+    readTime: '6 min read'
   },
   {
     slug: "tom-brady-flag-football-48-retirement-joke",
