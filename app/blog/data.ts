@@ -49,7 +49,6 @@ The genuine question for 2026 is whether the growth is structural or whether it 
     category: 'Sports',
     readTime: 6
   },
-] = [
   {
     slug: "tom-brady-flag-football-48-retirement-joke",
     title: "Tom Brady Played Flag Football at 48 and Looked Better Than Half the Active QBs in the League",
