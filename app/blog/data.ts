@@ -10,7 +10,46 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[] = [
+export const posts: BlogPost[
+  {
+    slug: 'masters-2026-who-wins-augusta',
+    title: 'The Masters 2026: Five Guys Who Could Win Augusta and One Who Absolutely Will Not',
+    excerpt: 'Augusta is almost here and we have opinions. Strong ones. Possibly irresponsible ones.',
+    content: `The Masters is the one golf tournament that even people who do not watch golf watch. The azaleas, the patrons, the green jacket, Amen Corner — it has its own mythology. We have done zero statistical analysis and have extremely confident predictions.
+
+Rory McIlroy has been due to win the Masters for about a decade. He has finished second twice and has otherwise displayed a remarkable ability to self-destruct on Sunday afternoon at Augusta specifically. He is absolutely going to win it this year. Or he will lead through 54 holes and then three-putt the 16th and we will all have to watch him do a press conference about what went wrong. One of those two things will happen.
+
+Scottie Scheffler is the world number one and has been playing golf at a level that makes normal professional golfers feel bad about themselves. He won it in 2022. He should be the favorite. He is the favorite. But picking the favorite at the Masters is for people who do not understand what makes the Masters compelling.
+
+Jon Rahm won it in 2023 and is now on LIV Golf which means he is either completely unbothered and in great form or he has been playing in front of smaller crowds and has lost his competitive edge entirely. Nobody knows which one it is.
+
+Brooks Koepka is the guy who shows up for the majors specifically. Regular PGA Tour events, he is fine. Majors, he transforms into a different person. He has five majors. He is not to be dismissed.
+
+Tiger Woods will not win the Masters. We say this with love and with full recognition that he has won it five times and once did things at Augusta that made people reconsider what was possible. He will not win it this year. He might make the cut. We will watch every single shot anyway.
+
+The Masters starts April 10. Clear your Sunday afternoon.`,
+    date: '2026-03-24',
+    category: 'Sports',
+    readTime: 5
+  },
+  {
+    slug: 'caitlin-clark-effect-womens-sports-2026',
+    title: 'The Caitlin Clark Effect Is Real and the Numbers Prove It',
+    excerpt: 'Two years ago WNBA games were getting 400,000 viewers. Now they are getting 3 million. Something changed.',
+    content: `There is a version of this conversation that devolves into argument about whether Caitlin Clark is overrated or underrated or whether the attention she gets is deserved or a media narrative. We are not interested in that conversation. We are interested in the numbers.
+
+WNBA viewership in 2022 averaged roughly 400,000 viewers per game. In 2024, games featuring the Indiana Fever averaged over a million. The playoffs broke records multiple times. The Commissioner's Cup, which historically nobody watched, drew three million viewers. These are not small changes. These are order-of-magnitude changes.
+
+The Fever had the highest attendance in the league. Road games in arenas that had been hosting half-full crowds were selling out. Teams started scheduling games against Indiana in bigger venues specifically because of the demand. Tickets for Fever games were going for prices that had never been seen in the WNBA.
+
+The counterargument is that the attention is not really about basketball, it is about Clark specifically and her college fame from Iowa, and once she stops being new the numbers will drop. This argument may be partially correct. The attention is definitely partly about Clark as a personality. But the other teams' numbers also went up. The league as a whole benefited. New fans came in to see Clark and stayed to watch other players.
+
+The genuine question for 2026 is whether the growth is structural or whether it was a Clark-specific spike. We will find out. The drafts are being watched. The storylines are being built. The league is investing. Whether this is a permanent inflection point or a three-year window is the actual sports business question of our era.`,
+    date: '2026-03-24',
+    category: 'Sports',
+    readTime: 6
+  },
+] = [
   {
     slug: "tom-brady-flag-football-48-retirement-joke",
     title: "Tom Brady Played Flag Football at 48 and Looked Better Than Half the Active QBs in the League",
