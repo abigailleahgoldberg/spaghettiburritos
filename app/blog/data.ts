@@ -10,7 +10,45 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[] = [
+export const posts: BlogPost[
+  {
+    slug: 'mikaela-shiffrin-6th-world-cup-title-2026',
+    title: 'She Was Up at 2 A.M. With Nerves. She Still Won Her 6th.',
+    seoTitle: 'Mikaela Shiffrin Wins 6th World Cup Overall Title 2026 | Spaghetti Burritos',
+    seoDescription: 'Mikaela Shiffrin clinched her record-tying 6th World Cup overall title in Hafjell, Norway. She was up at 2am with nerves. She won anyway.',
+    date: '2026-03-25',
+    category: 'Sports',
+    readTime: '3 min read',
+    excerpt: 'Mikaela Shiffrin clinched her record-tying 6th World Cup overall title today in Hafjell, Norway. She was up at 2am with nerves. She skied into the lead anyway.',
+    content: `Mikaela Shiffrin was awake at 2 in the morning.
+
+She had done everything right all season. Nine wins in ten slalom races. Win number 110 on Tuesday. A 87-point lead over a 22-year-old German named Emma Aicher who had been hunting her all year.
+
+And she was still up at 2am, nervous she could lose it.
+
+That is the part of the story that does not fit the highlight reel. The part where the greatest skier of her generation, holding a massive points lead on the final race day of the season, still could not sleep because the math was not yet final and the mountain does not care about your resume.
+
+Emma Aicher needed to win and needed Shiffrin to miss the top 15. Both things needed to happen. On paper, unlikely. At 2am, when your body is running on adrenaline and your brain will not stop doing worst-case math, unlikely is not the same as impossible.
+
+Then she went and skied anyway.
+
+On her second giant slalom run in Hafjell, Norway, Shiffrin moved into the lead. She held it. She stood on that hill, tears on her face, while other racers were still coming down the mountain, while the math was still being calculated in real time, and the moment was already there before it was officially official.
+
+Sixth overall World Cup title. Ties the all-time record. Biggest annual prize in skiing. Done.
+
+Here is what makes it even more absurd. Shiffrin did not race downhill this season. She skipped most of the super-G races. She essentially gave up points in two entire disciplines and still finished 87 points clear of the field. That is like showing up to a decathlon, sitting out the hurdles and the pole vault, and still winning.
+
+She came back from a brutal injury season. She went 9-for-10 in slalom. She got the record.
+
+The vulnerability is the point. You do not get to 110 wins and 6 overall titles by being unaffected. You get there by being very much affected and going anyway. By being up at 2am and still showing up at the start gate.
+
+She was up at 2am with nerves.
+
+She still won her 6th.
+
+That is the whole story.`,
+  },
+,
   {
     slug: 'your-bracket-is-already-dead',
     title: 'Your Bracket Is Already Dead and That\'s the Point',
