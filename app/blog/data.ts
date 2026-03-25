@@ -10,7 +10,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[
+export const posts: BlogPost[] = [
   {
     slug: 'your-bracket-is-already-dead',
     title: 'Your Bracket Is Already Dead and That's the Point',
