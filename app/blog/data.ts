@@ -132,6 +132,8 @@ Is Iowa going to the Final Four? Make your case.`,
   {
     slug: 'masters-2026-who-wins-augusta',
     title: 'The Masters 2026: Five Guys Who Could Win Augusta and One Who Absolutely Will Not',
+    seoTitle: 'The Masters 2026: Five Guys Who Could Win Augusta and One Wh',
+    seoDescription: 'Augusta is almost here and we have opinions. Strong ones. Possibly irresponsible ones.',
     excerpt: 'Augusta is almost here and we have opinions. Strong ones. Possibly irresponsible ones.',
     content: `The Masters is the one golf tournament that even people who do not watch golf watch. The azaleas, the patrons, the green jacket, Amen Corner — it has its own mythology. We have done zero statistical analysis and have extremely confident predictions.
 
@@ -153,6 +155,8 @@ The Masters starts April 10. Clear your Sunday afternoon.`,
   {
     slug: 'caitlin-clark-effect-womens-sports-2026',
     title: 'The Caitlin Clark Effect Is Real and the Numbers Prove It',
+    seoTitle: 'The Caitlin Clark Effect Is Real and the Numbers Prove It | ',
+    seoDescription: 'Two years ago WNBA games were getting 400,000 viewers. Now they are getting 3 million. Something changed.',
     excerpt: 'Two years ago WNBA games were getting 400,000 viewers. Now they are getting 3 million. Something changed.',
     content: `There is a version of this conversation that devolves into argument about whether Caitlin Clark is overrated or underrated or whether the attention she gets is deserved or a media narrative. We are not interested in that conversation. We are interested in the numbers.
 
