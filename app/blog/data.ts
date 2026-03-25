@@ -10,7 +10,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[
+export const posts: BlogPost[] = [
   {
     slug: 'mikaela-shiffrin-6th-world-cup-title-2026',
     title: 'She Was Up at 2 A.M. With Nerves. She Still Won Her 6th.',
