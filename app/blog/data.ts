@@ -129,7 +129,6 @@ The bracket had Florida going deep. Almost nobody had Iowa advancing past the fi
 
 Is Iowa going to the Final Four? Make your case.`,
   },
-,
   {
     slug: 'masters-2026-who-wins-augusta',
     title: 'The Masters 2026: Five Guys Who Could Win Augusta and One Who Absolutely Will Not',
