@@ -10,7 +10,126 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[] = [
+export const posts: BlogPost[
+  {
+    slug: 'your-bracket-is-already-dead',
+    title: 'Your Bracket Is Already Dead and That's the Point',
+    seoTitle: 'Your Bracket Is Already Dead and That's the Point | Spaghetti Burritos',
+    seoDescription: 'A 12-seed destroyed your bracket in the first 40 minutes of March Madness. Good. That's exactly how it was supposed to go.',
+    date: '2026-03-24',
+    category: 'Sports',
+    readTime: '4 min read',
+    excerpt: 'You spent 20 minutes on your bracket. A 12-seed just destroyed it in the first 40 minutes. Welcome to March Madness. This is exactly how it was supposed to go.',
+    content: `You spent 20 minutes on your bracket. Maybe 30 if you really did your research. You looked at the seeds, googled a few team names, picked your conference loyalties, and felt good about it.
+
+Then a 12-seed came out of nowhere and burned it down in the first half of the first day.
+
+Welcome to March Madness. This is exactly how it was supposed to go.
+
+Here is the thing nobody wants to admit: the bracket was never meant to survive. It is a ritual, not a prediction. The chaos is the product. The drama is the point. March Madness is not popular because people are good at forecasting college basketball outcomes. It is popular because nobody is.
+
+Every year a 12-seed beats a 5-seed. Every single year. It has become so reliable that it is practically a tradition. Bracketologists write entire pieces about which 12-seed to pick. And somehow, every year, most of us still do not pick it. Or we pick the wrong one. Because that is the game.
+
+Day 1 delivered everything it promised this year. UNC went out in overtime. Nebraska won their first tournament game in program history. A team nobody had going anywhere knocked out a program with banners in the rafters. Forty minutes of basketball erased four years of fan investment and two weeks of expert analysis.
+
+That is the product. That is what we are all watching for.
+
+The best bracket strategy, if we are being honest, is to pick one massive upset per round, enjoy the chaos as it unfolds, stop pretending you knew, and let the thing breathe. The bracket is a permission slip to care about 64 games involving teams you have never watched. The moment it dies is the moment the tournament starts being fun.
+
+Your bracket is dead. Your attention is not. That is the whole point.
+
+The best line of March Madness is not from a commentator or a coach. It is from whoever texts your group chat at 11pm on a Thursday saying the only team they had going to the Final Four just lost to a school they have never heard of.
+
+That person is having the best time.
+
+Your bracket died so you could remember why you love March. Which upset already wrecked yours? Drop it below.`,
+  },
+  {
+    slug: 'nebraska-first-tournament-win',
+    title: 'Nebraska Finally Won a Tournament Game and the Internet Lost Its Mind',
+    seoTitle: 'Nebraska Finally Won a Tournament Game | Spaghetti Burritos',
+    seoDescription: 'Nebraska just won their first NCAA Tournament game in program history. The last Power Five school to do it. A moment 40 years in the making.',
+    date: '2026-03-24',
+    category: 'Sports',
+    readTime: '3 min read',
+    excerpt: 'Nebraska just won their first NCAA Tournament game in program history. The last Power Five school without a tournament win. A moment 40 years in the making.',
+    content: `Nebraska football is a religion. On Saturday afternoons in the fall, Memorial Stadium becomes one of the largest cities in Nebraska. The program has five national championships and a fanbase that measures devotion in decades.
+
+Nebraska basketball has been, for most of that same stretch, a running joke.
+
+Not a mean joke. A gentle one. The kind where you acknowledge the effort while accepting the outcome. They made the tournament. They lost in the first round. They missed the tournament. They made it again. They lost again. Forty years of this. The last Power Five program without a single NCAA Tournament win. That was not just a stat. That was an identity.
+
+Until now.
+
+When Nebraska finally won, something happened that only March Madness produces. People who had never watched a Nebraska basketball game in their lives cared. Fans who remembered the program from decades of near-misses cried. Social media, which is usually a place where people argue about things that do not matter, briefly became a place where people shared in something that did.
+
+The suffering was the point. That is the part that is hard to explain to people who do not follow sports with this kind of investment. The 40 years of losing did not just make the win sweeter. They made it possible. A program that wins all the time cannot produce this moment. You have to have earned the weight of the drought to feel the full release of the break.
+
+Nebraska basketball was the last Power Five school without a tournament win. Now it is not. That sentence will be in the first paragraph of their Wikipedia page forever.
+
+The longest droughts produce the loudest celebrations. What is the longest your team has made you wait?`,
+  },
+  {
+    slug: 'passover-april-fools-day-2026',
+    title: 'Passover Starts on April Fool's Day This Year and God Has Jokes',
+    seoTitle: 'Passover Starts April Fool's Day 2026 | Spaghetti Burritos',
+    seoDescription: 'Passover starts on April 1, 2026. April Fool's Day. The holiday about escaping slavery lands on the day everyone pretends bad things are happening. God set the calendar.',
+    date: '2026-03-24',
+    category: 'Culture',
+    readTime: '3 min read',
+    excerpt: 'Passover starts on April Fool's Day this year. April 1, 2026. You cannot make this up. Or maybe God can.',
+    content: `Passover starts on April Fool's Day this year.
+
+April 1, 2026. The first night of the Seder falls on the same calendar date as the day the entire internet is contractually obligated to lie to you. You cannot make this up.
+
+Or maybe God can.
+
+Passover is the holiday where Jewish people retell the story of the Exodus. Slavery in Egypt. Ten plagues. A parting sea. The long walk through the desert. It is the most theatrical holiday on the Jewish calendar. There is a script, a prop list, a meal that doubles as a history lesson, and a song about a goat that somehow concludes everything.
+
+April Fool's Day is the day where everyone pretends bad things are happening and then says "gotcha." It is a holiday built entirely on the premise of fake suffering followed by relief.
+
+Put them together and you get: fake suffering, real suffering, and everyone at the Seder table making plague jokes.
+
+"Let my people go" hits different when it drops on the same day as "April Fools." Pharaoh was the original guy who did not read the room.
+
+The overlap is either cosmic irony or perfect timing, depending on your theology. The Seder plate already has a shank bone, bitter herbs, and a reminder that life was very bad for a very long time before it got better. April 1 just adds a layer.
+
+The afikomen hunt is already a bit of a long con run by children on adults. The four questions are children cross-examining their parents about dinner. The whole night is a structured bit. April Fool's is just the ambient soundtrack.
+
+God set the calendar. We are just living in it.
+
+What is your best Passover on April Fool's Day joke? We will post the best ones.`,
+  },
+  {
+    slug: 'iowa-florida-march-madness-upset',
+    title: 'Florida Was a #1 Seed. Iowa Was Not. Let's Talk About It.',
+    seoTitle: 'Iowa Upsets Florida #1 Seed March Madness 2026 | Spaghetti Burritos',
+    seoDescription: 'Iowa knocked out Florida in the second round of March Madness. The Big Ten has six teams still standing. The chalk crumbled right when everyone thought it was safe.',
+    date: '2026-03-24',
+    category: 'Sports',
+    readTime: '3 min read',
+    excerpt: 'Iowa just knocked out Florida in the second round of March Madness. #9 over #1. The chalk crumbled right when everyone thought it was safe.',
+    content: `Florida came into March Madness as a number one seed. They were supposed to be the team that survived the first weekend while everyone else collapsed. They were the chalk. The safe pick. The program you put in your Final Four because you wanted your bracket to feel responsible.
+
+Iowa was a nine seed. They were the team you put in as your one upset pick and then second-guessed until tip-off.
+
+Iowa won.
+
+It was not close in the second half. It was not a lucky bounce or a fluky three at the buzzer. Iowa played better basketball than a one seed for 40 minutes and walked out of the second round while Florida walked home. The bracket did what the bracket does.
+
+Here is what makes this interesting beyond the result: the Big Ten has six teams still alive. Six. The conference that everyone spent the regular season arguing about, the one with too many games and too many teams and too many Wednesday night matchups nobody watched, is doing just fine.
+
+St. John's hit a buzzer-beater. Illinois won by 35. Iowa took out the number one seed. This is not one team catching lightning. This is a conference running through the tournament with something to prove.
+
+The blue bloods are going home early. The programs with the banners and the legends and the Nike deals and the number one rankings are sitting at home watching Iowa play basketball on their television.
+
+Seedings are suggestions. March is the final word.
+
+The bracket had Florida going deep. Almost nobody had Iowa advancing past the first weekend. That is not a failure of analysis. That is March Madness working exactly as designed.
+
+Is Iowa going to the Final Four? Make your case.`,
+  },
+,
   {
     slug: 'masters-2026-who-wins-augusta',
     title: 'The Masters 2026: Five Guys Who Could Win Augusta and One Who Absolutely Will Not',
