@@ -13,9 +13,9 @@ export interface BlogPost {
 export const posts: BlogPost[] = [
   {
     slug: 'your-bracket-is-already-dead',
-    title: 'Your Bracket Is Already Dead and That's the Point',
-    seoTitle: 'Your Bracket Is Already Dead and That's the Point | Spaghetti Burritos',
-    seoDescription: 'A 12-seed destroyed your bracket in the first 40 minutes of March Madness. Good. That's exactly how it was supposed to go.',
+    title: 'Your Bracket Is Already Dead and That\'s the Point',
+    seoTitle: 'Your Bracket Is Already Dead and That\'s the Point | Spaghetti Burritos',
+    seoDescription: 'A 12-seed destroyed your bracket in the first 40 minutes of March Madness. Good. That\'s exactly how it was supposed to go.',
     date: '2026-03-24',
     category: 'Sports',
     readTime: '4 min read',
@@ -71,13 +71,13 @@ The longest droughts produce the loudest celebrations. What is the longest your 
   },
   {
     slug: 'passover-april-fools-day-2026',
-    title: 'Passover Starts on April Fool's Day This Year and God Has Jokes',
-    seoTitle: 'Passover Starts April Fool's Day 2026 | Spaghetti Burritos',
-    seoDescription: 'Passover starts on April 1, 2026. April Fool's Day. The holiday about escaping slavery lands on the day everyone pretends bad things are happening. God set the calendar.',
+    title: 'Passover Starts on April Fool\'s Day This Year and God Has Jokes',
+    seoTitle: 'Passover Starts April Fool\'s Day 2026 | Spaghetti Burritos',
+    seoDescription: 'Passover starts on April 1, 2026. April Fool\'s Day. The holiday about escaping slavery lands on the day everyone pretends bad things are happening. God set the calendar.',
     date: '2026-03-24',
     category: 'Culture',
     readTime: '3 min read',
-    excerpt: 'Passover starts on April Fool's Day this year. April 1, 2026. You cannot make this up. Or maybe God can.',
+    excerpt: 'Passover starts on April Fool\'s Day this year. April 1, 2026. You cannot make this up. Or maybe God can.',
     content: `Passover starts on April Fool's Day this year.
 
 April 1, 2026. The first night of the Seder falls on the same calendar date as the day the entire internet is contractually obligated to lie to you. You cannot make this up.
@@ -102,7 +102,7 @@ What is your best Passover on April Fool's Day joke? We will post the best ones.
   },
   {
     slug: 'iowa-florida-march-madness-upset',
-    title: 'Florida Was a #1 Seed. Iowa Was Not. Let's Talk About It.',
+    title: 'Florida Was a #1 Seed. Iowa Was Not. Let\'s Talk About It.',
     seoTitle: 'Iowa Upsets Florida #1 Seed March Madness 2026 | Spaghetti Burritos',
     seoDescription: 'Iowa knocked out Florida in the second round of March Madness. The Big Ten has six teams still standing. The chalk crumbled right when everyone thought it was safe.',
     date: '2026-03-24',
