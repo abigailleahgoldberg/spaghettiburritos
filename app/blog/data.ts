@@ -48,7 +48,6 @@ She still won her 6th.
 
 That is the whole story.`,
   },
-,
   {
     slug: 'your-bracket-is-already-dead',
     title: 'Your Bracket Is Already Dead and That\'s the Point',
