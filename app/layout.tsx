@@ -27,12 +27,13 @@ export const metadata: Metadata = {
     url: "https://spaghettiburritos.com",
     siteName: "Spaghetti Burritos",
     type: "website",
-    images: [{ url: "https://spaghettiburritos.com/favicon.ico", width: 64, height: 64, alt: "Spaghetti Burritos" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Spaghetti Burritos — The Internet's Worst Best Website" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Spaghetti Burritos",
     description: "The internet's worst best website. No filter.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
