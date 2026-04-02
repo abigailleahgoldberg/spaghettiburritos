@@ -51,8 +51,19 @@ export default async function PostPage({ params }: Props) {
   const pullQuoteIdx = paragraphs.length > 3 ? 2 : 1;
   const pullQuote = paragraphs[pullQuoteIdx];
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.seoDescription,
+    "datePublished": post.date,
+    "author": { "@type": "Organization", "name": "Spaghetti Burritos" },
+    "publisher": { "@type": "Organization", "name": "Spaghetti Burritos", "url": "https://spaghettiburritos.com" }
+  };
+
   return (
     <div style={{ background: "#0A0A0A", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <div style={{
         background: "#141414",
