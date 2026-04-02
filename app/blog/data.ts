@@ -1121,3 +1121,306 @@ export function getPost(slug: string): BlogPost | undefined {
 export function getRecentPosts(count: number = 3): BlogPost[] {
   return posts.slice(0, count);
 }
+
+const aprilPosts2026: BlogPost[] = [
+  {
+    slug: 'gas-station-food-tier-list-2am',
+    title: `The Definitive Tier List of Gas Station Food at 2AM`,
+    seoTitle: `The Definitive Tier List of Gas Station Food at 2AM`,
+    seoDescription: `Not all gas station food is created equal. This is the definitive, non-negotiable tier list of what to eat at 2AM when the gas station is your only option.`,
+    excerpt: `Not all gas station food is created equal. This is the definitive, non-negotiable tier list of what to eat at 2AM when the gas station is your only option.`,
+    date: '2026-04-01',
+    category: `Culture`,
+    readTime: '5 min read',
+    content: `The gas station at 2AM is a judgment-free zone. This is established law. Whatever you are doing there, whatever life choices led you to that parking lot, whatever you are about to purchase and consume in your car — we are not here to judge. We are here to help you maximize the experience.
+
+This tier list is definitive and not open to debate. Debate it anyway. That's what the comments are for.
+
+---
+
+## S Tier: The Reason You Come Here
+
+**The Roller Grill Hot Dog (After 11PM)**
+
+The hot dog that has been rotating on those heated rollers since approximately 7pm has achieved a state of being that a freshly grilled hot dog can never know. The outside has a particular snap. The inside has a density and character that comes only from hours of patient heat transformation. Is it slightly concerning that it has been there that long? Yes. Is it also somehow perfect? Also yes.
+
+The gas station hot dog is a gift. You must use a bun from the clear case, mustard and ketchup from the squeeze bottles, and carry it to the car like the precious cargo it is.
+
+**The Taquito / Roller Burrito Situation**
+
+Cousin to the hot dog and equally prestigious. The taquito has achieved peak crunch at the two-hour roller mark. The cheese inside has entered a new physical state. This is technically a food. It is also technically art. Get two. You're already here.
+
+**The Bottle of Water You Actually Need**
+
+You know what you did. You know why you're at a gas station at 2AM. You know you haven't had water since noon. The water goes in the basket alongside everything else and it is the most important thing in the basket. Nobody says this out loud. We all know it's true.
+
+---
+
+## A Tier: Reliable. Respected.
+
+**Funyuns**
+
+The Funyun is undefeated as a chip at this hour. The combination of the onion flavor and the ring texture at 2AM is not something science has fully explained. They hit in a way that regular chips do not. Get the large bag.
+
+**Any Flavor of Combos**
+
+Combos were designed in a laboratory to satisfy at exactly this moment. Pretzel with cheese, pizza, whatever — they're all correct. They require no apology.
+
+**The Iced Coffee Can (Monster, Bang, Starbucks Double Shot)**
+
+You are going to need to be awake. Or you are trying to return to sleep and this is a terrible choice. Either way, the can is in your hand. It will do what it does.
+
+**Beef Jerky**
+
+Expensive relative to caloric return. Deeply satisfying. Protein has a way of centering you. The Jack Link's Original is correct. Teriyaki is also acceptable. "Premium Craft Artisan" jerky at this price is not what this moment calls for.
+
+---
+
+## B Tier: Solid. No Complaints. Not Special.
+
+**Doritos (Nacho Cheese)**
+
+Correct and expected. Not inspired. You have had Doritos before and you will have them again. This one is the same.
+
+**Peanut Butter Crackers**
+
+The old standby. They're fine. They've been fine for forty years. They will continue to be fine. The crackers understand their assignment.
+
+**Sunflower Seeds**
+
+For a specific type of person at a specific type of 2AM. You know who you are. You need something to do with your mouth during a long drive or a long think. The sunflower seeds understand.
+
+**Big Bag Gummy Bears**
+
+Not as strong as Haribo but this isn't a boutique candy situation. They're sweet. They're there. The bag will be mostly empty before you get home.
+
+---
+
+## C Tier: Serviceable But You Wanted Better
+
+**The Microwaveable Sandwich in the Foil Bag**
+
+You did your best. The cheeseburger or breakfast sandwich that lives in the small refrigerated section, goes in the microwave for 90 seconds, comes out in a steamed foil bag — this is not a good food. But it is a warm food, and at 2AM warm carries significant weight. The bread will be slightly wet. You will accept this.
+
+**Hot Cheetos**
+
+Hot Cheetos are genuinely excellent. They are C tier here not because of their quality but because they require a napkin situation that you do not currently have, and the aftermath involves orange hands that will last until morning. The calculus at 2AM involves more friction than other options.
+
+**The Protein Bar**
+
+You are making a choice here that the 2AM version of you will resent slightly. The protein bar is technically the right call. It is also joyless in a moment that deserves at least a small amount of joy.
+
+---
+
+## D Tier: You Can Do Better
+
+**The Fountain Drink in the Giant Cup**
+
+The fountain drink is fine in the building but it's going to spill in your car. The cup doesn't fit in the cupholder. The ice is going to melt and make it weak. This was a foreseeable problem.
+
+**The Questionable Slice of Pizza Under the Heat Lamp**
+
+You looked at it. You considered it. You know from the angle of the cheese and the particular geography of the toppings that this pizza has witnessed things. It has been under that lamp since the beginning. Back away.
+
+---
+
+## F Tier: No. We Are Not Doing This.
+
+**Anything From the Coffee Machine That Has a Nozzle With Residue On It**
+
+You can see it. You are choosing to proceed anyway. We understand. We cannot endorse this.
+
+**The Single Banana**
+
+You went to a gas station at 2AM and bought a banana. This is the most disciplined decision anyone has ever made and it is also deeply wrong for the context. Eat the banana. Eat it in silent contemplation of all the choices that led here.
+
+---
+
+*More important cultural criticism at [Spaghetti Burritos](/food).*`,
+  },
+  {
+    slug: 'types-of-people-sports-bar-ranked',
+    title: `Every Type of Person at a Sports Bar, Ranked by How Much They Ruin It`,
+    seoTitle: `Every Type of Person at a Sports Bar, Ranked by How...`,
+    seoDescription: `Sports bars are society at its most concentrated. Here is a definitive ranking of every type of person you'll encounter, ordered by how much they degrade your viewing experience.`,
+    excerpt: `Sports bars are society at its most concentrated. Here is a definitive ranking of every type of person you'll encounter, ordered by how much they degrade your viewing experience.`,
+    date: '2026-04-01',
+    category: `Culture`,
+    readTime: '5 min read',
+    content: `The sports bar is an ecosystem. Like any ecosystem, it has its own hierarchy, its own species, its own food chain. Some of these species enhance the environment. Most make it worse. Here is the definitive ranking.
+
+---
+
+## Tier S: Sacred. Protect These People.
+
+**The Knowledgeable Quiet Fan**
+Does not speak unless they have something worth saying. When they do speak, it's correct and adds genuine information to the viewing experience. Arrives early, knows exactly where to sit, has already scoped out the sound situation. Is genuinely happy watching the game. The sports bar would be perfect if it were only this person.
+
+**The Round Buyer**
+Assesses the table situation early, goes to the bar, comes back with a round for everyone unprompted. Does this again later. Does not keep score or expect recognition. Simply enjoys abundance and wants others to share in it. This person makes civilization possible.
+
+---
+
+## Tier A: Good. We Need These People.
+
+**The Enthusiastic Bandwagon Fan Who Admits It**
+"Look, I only started watching them this year but I am LOCKED IN." Fine! Enthusiasm is contagious. Being honest about recent fandom is more than most bandwagoners offer. They're going to be annoying when the team makes the playoffs but right now they are fine.
+
+**The Person Who Already Ate**
+Ordered one beer, not using any food service, sitting in a seat. Actually fine. Drinking at a bar is legal and expected. Not causing problems.
+
+---
+
+## Tier B: Neutral. Fine to Exist Here.
+
+**The First-Timer Asking Questions**
+"Wait, why was that a penalty?" is a reasonable question once. Twice is acceptable. At some point the game has to be watched, but accommodating reasonable curiosity is part of the social contract and first-timers deserve a window of ignorance.
+
+**The Person Having a Side Conversation About Something Unrelated**
+Fine as long as it's happening at a volume that doesn't require anyone else to hear it. This is a public space. Side conversations are a part of life. Just keep it below game audio.
+
+---
+
+## Tier C: Tolerable But Noted.
+
+**The Loud Stats Person**
+"Did you know he's actually 3 for 47 on plays like that in the fourth quarter at home?" Nobody asked. The information may even be accurate. But the timing and the delivery — right after the play, interrupting the natural response to the play — is a disruption to organic emotional experience.
+
+**The Person Watching a Different Game on Their Phone**
+Fine in theory. Not fine when they try to narrate their phone game while a crucial moment in the bar game is happening. You have to pick. You can't do both simultaneously and expect people to accommodate you.
+
+**The Late Arrival Who Needs Catching Up**
+"What's the score? What did I miss? Who scored first? Why are they losing?" You had a phone the entire time you were not here. There is an app. This was chosen.
+
+---
+
+## Tier D: They Ruin It. They Know They Ruin It. They Have No Intention of Stopping.
+
+**The Person Who Shushes Nobody**
+Randomly decides that the bar is too loud and says "guys, guys, GUYS" during a commercial break to get everyone to quiet down, then doesn't have anything to say worth the shushing. What are you shushing for? This isn't your living room. This is a place of business where sound is occurring.
+
+**The Wrong Team's Fan Who Needs You to Know**
+Wearing the away team jersey at a home-team-friendly bar, fine. Going out of their way to make sure every person within earshot knows which team they're for, then doing a prolonged celebration directly into the faces of the home team fans, fine-ish as sports trash talk. But then doing it again, and again, and checking in repeatedly with "how's your team doing?" while grinning — at some point you chose to come here. Manage accordingly.
+
+**The Armchair Coach**
+"Just run the ball." "Why would you throw there?" "I would have done X." Provided as loud, confident commentary throughout the game to no one in particular, as if the coaching staff has access to the opinions of this man sitting in a bar eating mozzarella sticks.
+
+---
+
+## Tier F: A Menace. No Other Word.
+
+**The Person Who Stands In Front of the TV**
+Unforgivable under any circumstances except a medical emergency. You are a physical obstruction to the purpose of the establishment. Sit down or move sideways. You are not transparent.
+
+**The Table That Doesn't Care About the Game**
+Booked the booth directly in front of the game, spent the entire time talking about something else, looks annoyed when people around them react to the game. Why are you here. There are restaurants with no sports. Go there. You have done this on purpose.
+
+**The Check-Splitter Who Causes a 15-Minute Transaction**
+The game went to overtime. The tension is maximum. The winning touchdown is imminent. And THIS person has chosen RIGHT NOW to ask the server for separate checks on a tab of eleven people with complex modifications. The server is doing their best. You are not.
+
+**The Guy Watching On His Phone At Full Volume Without Headphones**
+This person is the last boss. There is a large television in this establishment playing the game at a reasonable volume. That was not sufficient. This person needed to also have the game playing on their phone, at a different audio delay, creating an echo chamber of sports commentary that serves no one. 
+
+If you are this person: we love you. Please stop. Please.
+
+---
+
+*More sports opinions at [Spaghetti Burritos](/sports).*`,
+  },
+  {
+    slug: 'unwritten-rules-fantasy-football-group-chat',
+    title: `The Unwritten Rules of the Fantasy Football Group Chat (You're Breaking All of Them)`,
+    seoTitle: `The Unwritten Rules of the Fantasy Football Group...`,
+    seoDescription: `Fantasy football group chats are a beautiful disaster. Here are the unwritten rules that everyone knows but nobody follows — and the specific people destroying your group chat right now.`,
+    excerpt: `Fantasy football group chats are a beautiful disaster. Here are the unwritten rules that everyone knows but nobody follows — and the specific people destroying your group chat right now.`,
+    date: '2026-04-01',
+    category: `Culture`,
+    readTime: '6 min read',
+    content: `The fantasy football group chat is a sacred institution. For approximately five months of the year, it is the most active, most chaotic, and most emotionally unhinged text thread in your phone. People who barely text their own parents are in that chat sending reaction GIFs at 11pm on a Tuesday because their kicker missed a 47-yarder.
+
+There are rules. Nobody wrote them down. Everyone knows them. And somebody in your league is violating every single one of them right now. Let's address this.
+
+## Rule 1: You Don't Gloat More Than Two Messages
+
+One message of celebration after a win is completely acceptable. A two-message cap is the maximum. Something like: "Let's go! That Tyreek TD at the end sealed it. See you in the playoffs suckers." 
+
+That is the limit. 
+
+What you may not do is send a play-by-play recap of how you knew you'd win, a screenshot of your winning score, a breakdown of each of your players' performances, a reflection on your Draft Day decisions, and then a message the next morning returning to the topic with "just woke up and checked the standings. Still smiling." 
+
+Nobody in the chat wants to be in the chat with you. They're already in the chat with you because they have to be. Don't make it worse.
+
+## Rule 2: The Injury Meltdown Has a Time Limit
+
+Your RB1 went down in the first quarter. You are devastated. We understand. We extend sympathy. You may send the initial "NOOOOO NOT [PLAYER]" message. You may send one follow-up expressing the existential horror of your season.
+
+After that, the meltdown needs to be processed privately.
+
+You do not get to still be actively processing the injury in the chat at 6pm Sunday, 10pm Sunday, and then again Monday morning when you start lineup decisions. The group chat is not your emotional support animal. It's a place where other people are also experiencing things and also have feelings. Put the injury grief in the notes app where it belongs.
+
+## Rule 3: Trade Negotiations Are Not a Group Activity
+
+If you want to offer a trade, you message the person directly. You do not post your offer in the group chat and ask for public comment. You do not say "anyone interested in Davante Adams, make an offer!" like this is an eBay listing.
+
+Trade discussions in the public chat create chaos. Everyone has an opinion. Someone will accuse you of tampering. Someone else will make a counter-offer they're not serious about. The person you actually want to trade with now has to respond under public scrutiny, which is unfair.
+
+The group chat is not the trading floor. It is the bar. Conduct your negotiations in the bar bathroom like God intended.
+
+## Rule 4: Don't Google the Injury Report Out Loud in the Chat
+
+"Guys, I'm seeing reports that [player] is listed as questionable, left the game in Q3 with a hamstring, doesn't look good." 
+
+We know. We are all on Twitter. We all have the same apps. Everyone in this group chat receives the same push notifications. You are not a breaking news anchor. You are not providing information that does not exist elsewhere.
+
+The only acceptable injury report information to share is something genuinely obscure that not everyone would have seen. If you are reading the beat reporter's tweet that already has 8,000 retweets, you are not providing a service.
+
+## Rule 5: The "It's Just a Game" Energy Must Be Immediately Destroyed
+
+Someone in your league will inevitably say "it's just a game" when they are losing. This person is lying. They do not believe it's just a game. They are using "it's just a game" as a defense mechanism for the specific humiliation of losing.
+
+This is not to be tolerated. If it's just a game, why did you spend four hours on draft prep? Why did you set your lineup at 11:59pm Sunday? Why do you have FantasyPros open right now? You're reading a fantasy football article. It's not just a game. Don't let anyone pretend otherwise.
+
+## Rule 6: No Injury-Sympathy Trading
+
+The moment someone's player gets hurt, someone else in the league will immediately message them asking if they want to sell low. This is legal under the rules of fantasy football. It is, however, extremely uncool within the first 30 minutes.
+
+Wait at least a few hours. Let the person have their injury grief. Let them work through the stages. THEN try to scoop their injured player for pennies on the dollar like the vulture you are.
+
+This is called decorum.
+
+## Rule 7: The Weekly Power Rankings Are Mandatory Reading
+
+If your league commissioner writes weekly power rankings and nobody engages with them, you are a bad league. Power rankings are the commissioner's love language. They spent an hour writing them. You will read them and you will react with at least one emoji, even if it's just 👀.
+
+The commissioner who writes weekly power rankings is holding the social glue of your league together. Honor that labor.
+
+## Rule 8: You Have to Show Up for Trash Talk When You're Winning
+
+This one is crucial. The person who is silent all season until week 13 when they happen to make the playoffs and suddenly wants to engage in trash talk is the worst person in the league.
+
+Trash talk requires investment. You have to have suffered. You have to have been in the chat during the dark weeks when your team was 2-7 and you were still posting. You cannot parachute into trash talk from a position of success without having put in the losing work.
+
+Earn the right to be insufferable by first being in the chat when things were bad.
+
+## Rule 9: The Final Week Injury Excuse Is Noted But Not Accepted
+
+"I would have won the championship but [player] got hurt in the second quarter." 
+
+First: yes, we know. Second: yes, injuries are unfair. Third: those are the rules. You don't get to rebuild your narrative around the version of the season where your player didn't get hurt. Your record is your record. Your result is your result.
+
+The injury escape hatch is not a real thing and we will not be entertaining it.
+
+## Rule 10: The Annual Trophy Has to Be Real
+
+If your league has been around for five years and you're still doing a digital trophy in the group chat instead of a physical prize, you've lost the plot. The trophy needs to be real. It needs to be ugly. The winner should have to display it somewhere visible and photographable.
+
+The physical trophy is the thing that makes it matter. Without it, you're just guys playing video games in a group chat. With it, you're a dynasty franchise with a legacy.
+
+Get the trophy.
+
+---
+
+*More sports opinions nobody asked for at [Spaghetti Burritos](/community).*`,
+  },
+];
+posts.push(...aprilPosts2026);
