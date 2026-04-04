@@ -1,4 +1,4 @@
-# Celebrity Passover 2025: Who's Hosting, Who's Attending, and Who Definitely Forgot the Matzah
+# Celebrity Passover 2026: Who's Hosting, Who's Attending, and Who Definitely Forgot the Matzah
 
 Passover starts Saturday night and you know what that means: celebrities posting extremely personal Seder content that they definitely workshopped with their publicist first. We're here for all of it. Every single bite.
 
