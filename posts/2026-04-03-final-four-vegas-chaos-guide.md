@@ -1,6 +1,6 @@
 # The Final Four Is Here and Vegas Is LIVING — Your Complete Weekend Chaos Guide
 
-Oh, you thought Vegas needed another reason to go completely unhinged? Meet the 2025 Final Four weekend. The Strip is packed, the sportsbooks have run out of counter space, and somewhere right now a tourist from Indiana is telling a blackjack dealer about his team's bracket destiny. We love this city.
+Oh, you thought Vegas needed another reason to go completely unhinged? Meet the 2026 Final Four weekend. The Strip is packed, the sportsbooks have run out of counter space, and somewhere right now a tourist from Indiana is telling a blackjack dealer about his team's bracket destiny. We love this city.
 
 Here's your completely unnecessary but completely essential guide to surviving — and thriving in — Final Four madness in Vegas.
 
@@ -14,7 +14,7 @@ Dark horse option: The Cosmopolitan's sportsbook is underrated and somehow still
 
 ## Celebrity Sightings (The Verified, The Rumored, and The Entirely Made Up)
 
-Look, it's Final Four weekend in Vegas in 2025. The celebs are here. We're not naming names because our lawyer has asked us to develop what she calls "a healthier relationship with the phrase allegedly." 
+Look, it's Final Four weekend in Vegas in 2026. The celebs are here. We're not naming names because our lawyer has asked us to develop what she calls "a healthier relationship with the phrase allegedly." 
 
 What we can tell you: there is a very famous former NFL quarterback at a certain high-roller lounge who has reportedly dropped enough money on the games this weekend to fund a small school district. There is a musician who should be on tour but apparently decided the Final Four was a better use of their Saturday. And at least three social media celebrities have filmed content in front of welcome signs and then gotten immediately lost looking for their hotel.
 
